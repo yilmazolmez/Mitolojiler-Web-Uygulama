@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading"><span dir="auto">Etrüsk mitolojisi</span></h1>
+      </blockquote>
+<ul>
+  <li><strong>Etrüsk mitolojisi veya Etrüsk dini, Etrüsklerin mitolojik yazın ve inançları ile birlikte yaptıkları dini adet ve uygulamaların bütünüdür.</strong></li>
+</ul>
+<ul>
+  <li><strong>Etrüskler Kuzey İtalya'dan gelen, zaman içinde Roma'ya kenetlenmiş, kökeni bilinmeyen bir ulustur. Birçok Etrüsk mitolojisi öğesi, tanrı ve tanrıçası Roma mitolojisi'ne girmiştir. Bunların bir kısmı doğrudan girerken, bir kısmı zaten var olan ve benzer özellikler taşıyan öğelere etki ederek, bir tür <em>sentez</em> sonucu girmiştir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Etrüsklerden geriye çok fazla yazın kalmamış, Etrüsk dili dahi bugün tam olarak anlaşılamamıştır. Ayrıca Romalı yazarların Etrüsklere, dillerine ve dinlere dair kaleme aldığı yazınlar da bugüne ulaşamamıştır. Tüm bu sebepler nedeniyle haklarında çok az şey bilinen Etrüsklerin dini ve mitolojik inanç, yaşayış ve yapılanmaları hakkında çok daha az şey bilinmektedir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Arkeolojik bulgular da sınırlıdır. Örneğin bugüne ulaşmış mezar kitabelerinde genelde ölen kişinin ismi geçerken, tapınaklara sunulan adak plakalarında sadece adağın yapıldığı tanrı veya tanrıçanın ismi geçer. Bu tip bilgiler de Etrüsk mitolojisine dair ancak yüzeysel bir idrakın gelişebilmesine olanak tanımıştır. Zaten Etrüsk dilinin tamamen anlaşılamamış olması, ele geçecek bulguların da en etkili şekilde kullanılmalarını kısıtlamaktadır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bununla birlikte bugüne ulaşan büyük oranda ikonografik materyal bulunmaktadır. Vaso süslemeleri, anıtlar, heykeller, taşlar, rölyefler ve kabartmalardaki ikonografi bize Etrüsk mitolojisi hakkında bilgi sunabilir. Her ne kadar bu ikonografi yoğun bir Helenistik etki altında kalsa ve Yunan mitolojisinden tasvirler içerse de, Etrüsk mitolojisi ile Yunan mitolojisi arasında kurulan bağlar Etrüsk mitolojisini, en azın karşılaştırmalı bir şekilde, anlamaya yardımcı olur niteliktedir. Örneğin Etrüsk mitolojisindeki tanrıların Yunan mitolojisindeki denkleri ve bazı daha yerel tanrıların Yunan mitolojisindeki benzerleri bu ikonografilerden anlaşılabilir. Bu da en azından mitolojik yapılanma ve anlayışa dair önemli ipuçları barındırır.</strong></li>
+</ul>
+<blockquote>
+  <h1><span id="Etr.C3.BCsk_tanr.C4.B1_ve_tanr.C4.B1.C3.A7alar.C4.B1">Etrüsk tanrı ve tanrıçaları</span></h1>
+  </blockquote>
+<ul>
+  <li><strong>Etrüsk mitolojisindeki çoğu tanrının Romalı ve İtalik denkleriyle olan ilişkisi ve hatta isimlerini bu denklerinden almaları Etrüsk dininin İtalyan Yarımadası'ndaki diğer milletlerin dinleriyle birlikte aynı zaman diliminde geliştiğinin düşünülmesine yol açmıştır. Genel görüşe göre dini yapı MÖ 1. binyılın başlarında gelişmeye başlamıştır. Etrüsk panteonu Yunan ve Roma panteonları gibi bir ana tanrı barındırır. Zeus ve Jüpiter'e denk olan bu tanrı <em>Tinia</em> veya <em>Tin</em> olarak anılır. İsminin anlamı &quot;parlayan gün&quot; olan bu figür tasvir anlamında büyük oranda Zeus'a benzer. Yunan Hera veya Romalı Juno ile denk olan ve Tinia'nın eşi konumunda olan <em>Uni</em> isimli bir tanrıça bulunmaktadır. Etrüsk mitolojisindeki, Roma benzeri üçlemeTinia, Uni ve Menerva şeklindedir. Menerva, Romalı Minerva'dan köken alan akıl tanrıçasıdır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bunların dışında birçok Yunan mitolojisi kökenli figür, çoğu zaman tüm mitleriyle birlikte, Etrüsk mitolojisine nüfuz etmişlerdir. Örnek olarak <em>Apulu</em> verilebilir. Apulu Yunan tanrısıApollo'nun dengidir ve gerek isim gerekse tüm mitleriyle Yunanlardan Etrüsklere geçmiştir. Bunun dışında ünlü Yunan kahramanı Herkül de <em>Hercle</em> ismiyle Etrüsk mitolojisindeki yerini almıştır. Bunlar ve birçok tanrı ve tanrıçanın özelliklerinin yanı sıra isimlerinin de Yunan mitolojisindeki isimlerden köken almış olması Etrüsk mitolojisindeki Yunan ve Roma etkisini aşikar kılmaktadır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Etrüsk mitolojisinde yer alan Tinia dışında tanrılara bakılırsa su tanrısı Nethuns, güneş tanrı Usil, orman tanrısı Selvans, zaman tanrısı Satre zikredilebilir. Yunan ve Roma mitolojileriyle olan yakın ilişki bu tanrılarda da göze çarpar. Satre Roma mitolojisindeki Satürn ile denkken Usil Yunan mitolojisindeki Helios ile denktir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Akıl tanrıçası Menerva, aşk tanrıçası Turan, yer altı tanrıçası Culsu ve ana tanrıça Cel ati adı belirtilebilecek önemli tanrıçalardandır. Etrüsk mitolojisindeki önemli ve güçlü arz tanrıçası Cel ati'nin ismini oluşturan iki sözcük &quot;dünya&quot; ve &quot;ana&quot;dırlar; yani onun ana tanrıça karakteri ismiyle barizdir. Yunan Demeter ile Romalı Terra Mater'e denktir. Bunların dışında daha önemli tanrıçalarla ilişkilendirilmiş daha küçük tanrıçalar bulunur, bunlara özgün bir isim ile <em>Lasa</em> denir. Örneğin Alpanu, Achavisur ve Zipna aşk tanrıçası Turan'ın yardımcısı Lasalardır.</strong></li>
+</ul>
+<blockquote>
+  <h1><span id="Etr.C3.BCsk_dininin_.C3.B6zellikleri">Etrüsk dininin özellikleri</span> </h1>
+  </blockquote>
+<ul>
+  <li><strong>Etrüsk mitolojisindeki Yunan etkisi yoğun olsa ve neredeyse her noktaya nüfuz etmiş olsa da, özgün temellerinin yanı sıra Etrüsklerin bu tip etki sonucu dahil olmuş figürleri geliştirdiği de bilinmektedir. Bunun en bariz örneklerinden biri Etrüsk mitolojisindeki yer altı/ahiret inancının yapısı, özellikleri ve tasviridir. Etrüsk yer altı dünyası Yunandakinin temellerine sahiptir. Örneğin kayıkçı Kharon, <em>Kharun</em> (veya<em>Charun</em>) ismiyle Etrüsk mitolojisinde yer alır. Burada ölecek olanların canını alırken kullanacağı büyük bir çekiçle tasvir edilmiştir. Bununla birlikte Etrüsk yer altı inancının barındırdığı demonoloji Yunandakinden çok daha gelişmiştir. Eril ve dişil birçok özgün iblisin yanı sıraYunan mitolojisindeki iblis ve canavarlar da bulunur.</strong><img src="images/210px-Charun_hammer_Cdm_Paris_2783.jpg" width="210" height="354" align="right" /></li>
+  <li><strong>Bunların dışında belki de Etrüsk din ve mitolojisini Roma ve Yunan'dan ayıran en önemli noktalardan biri tanrıların oluşturduğu bir <em>dinî sistem</em>in varlığıdır. Romalıların <em>Etrusca disciplina</em> diye andıkları bir tür Etrüsk din bilimi mevcuttur ve Etrüskler bunun tanrıların insanlara ilham etmesi yoluyla, tanrıların işi olduğuna inanmıştırlar. İlham edilen şeylerin yazılması <em>kutsal kitap</em> fikrini de doğurmuştur.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bu <em>bilim</em> veya <em>sistem</em> İbrahimi Dinler gibi <em>peygamber</em> benzeri bir öğe de barındırır. Ayrıca içinde birçok farklı gelenek bulunur. Bu geleneklerden biri Tarquinia'dandır. Bu geleneğe göre dünyanın doğurduğu Tages isimli bir çocuk bir köylü tarafından ıssız bir arazide bulunur. Çocuk mucizevi bir şekilde konuşabilen çocuk etrafa ona ilham olunmuş dini mesajları verir ve daha sonra da esrarengiz bir biçimde kaybolur. Etrüsklerin en çok etkilendiği Yunan ve Roma din ve mitolojilerinde bu tip bir <em>peygamber</em> benzeri kişiye rastlanmadığı gibi bu tip sembolizm ancak çeşitli millet, ülke, uygarlık veya kahramanların kökenine dair anlatılarda kullanır.</strong></li>
+</ul>
+<ul>
+  <li><strong>İlham (veya vahiy) kültürü kutsal kitap edebiyatına yol açmıştır. Örneğin bu kutsal kitaplarından biri <em>yıldırım kitapları</em>dır ve yıldırımlara dini bir bakış açısı barındırır. Ayrıca Etrüsk dininde kutsal kitaplarla birlikte özgün bir ruhban sınıfıda mevcuttur. Bu sınıftan kişiler çok saygındılar ve <em>Etrusca disciplina</em> uzmanlarıydılar. Bu sebepten örneğin Yunandaki dini görevlilerden çok daha farklı özelliklere sahiptirler. Daha sonra bu ruhban sınıfı Roma İmparatorluğuna yayılmış ve Roma dinine nüfuz etmiştir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Roma İmparatorluğu'ndaki paganist yapıya adapte olan ve Roma diniyle çok yakın bağlara sahip olan Etrüsk dini, kendisi Roma mitolojisinden etkilenirken Roma mitolojisinin ve özellikle dini yapısını etkilemiştir. Bunun en bariz göstergesi Roma sistemine Etrüsklerden geçmiş olan <em>haruspex</em>ler yani özel ruhban sınıfıdır. Özellikle ibadet, ritüel anlamında Etrüsk dininin Romadaki dini anlayışa önemli katkıları olmuştur. Hristiyanlığın yükselişiyle Roma paganizmiyle birlikte Etrüsk dini de büyük zarar görmüş ve sonunda <em>paganist inançların yasaklanmasıyla</em>, Roma diniyle birlikte Etrüsk dini de yok olmuştur.</strong></li>
+</ul>
+<blockquote>
+  <h1 id="firstHeading2"><span dir="auto">Etrüsk mitolojisi figürleri </span></h1>
+  <p><strong>Bu liste <a href="etrusk.html" title="Etrüsk mitolojisi" target="_blank">Etrüsk mitolojisindeki</a> figürleri barındırır. Burada figür ile kastedilen bu mitolojideki her türlü yaratık ve nesnedir, buna put, tanrı ve tanrıçalar da dahildir.</strong></p>
+  <p><strong>Açle:Truva Savaşı'nın efsanevi kahramanlarından, Yunan Aşil'den.</strong></p>
+  <p><strong>Aita:Yer altı dünyası tanrısı ve ölülerin hükümdarı, Yunan Hades ve Greko-Romen Plüto ile denktir.<br />
+  </strong></p>
+  <p><strong>Aivas:Yunan kahramanları Ajax, Telamon&rsquo;un oğlu ve Ajax, Oileus&rsquo;un oğlu&rsquo;nun dengidir.</strong></p>
+  <p><strong>Alpan:Lasa&rsquo;lardan biri ve aşk tanrıçası. Büyük ihtimalle Yunan tanrıça Persephone&rsquo;nin dengi. Sanatta genellikle kanatlı biçimde çıplak veya yarı çıplak resmedilmiştir.</strong></p>
+  <p><strong>Ani:Cennetin en üst katında yaşayan gök tanrısı. Dilbilimsel açıdan Roma tanrısı Janus ile ilişkilendirilebilir. Dişi dengi, eşi <em>Ana</em> idi.</strong></p>
+  <p><strong>Aplu:Gök gürültüsü ve şimşek tanrısı. Açık bir biçimde Yunan tanrısı Apollo'dan türetilmiştir.</strong></p>
+  <p><strong>Artume:<em>Artumes</em> veya <em>Artames</em>. Bereket, orman, doğa, gece, ay ve ölüm tanrıçası. Yunan tanrıça Artemis ile ilişkilidir.</strong></p>
+  <p><strong>Atunis:Popüler yaşam-ölüm-geridönüş (tekrar doğum) Adonis'in Etrüsklü enkarnasyonu, Turan'ın eşi.</strong></p>
+  <p><strong>Cautha:Bir güneş tanrıçası, ve güneşin kızı. Aynı zamanda başlangıçların ve şafağın tanrıçasıydı.</strong></p>
+  <p><strong>Cel:Arz tanrısı, Yunan Gaia'nın dengi. <em>Ati Cel</em> (&quot;Toprak/Dünya Baba&quot;) veya <em>Apa Cel</em> (&quot;Toprak/Dünya Ana&quot;) olarak yorumlanırdı.</strong></p>
+  <p><strong>Kharontes:Bir iblis (cin) türü, büyük ihtimalle dilbilimsel açıdan Kharon ile ilişkili.</strong></p>
+  <p><strong>Kharun:Yeraltı dünyasında ölülerin ruhlarına işkence eden bir iblis, cin. Aynı zamanda yeraltı dünyasının girişinin bekçisidir. Akbababurunlu, sivri uçlu kulaklı, kızıl saçlı, tüylü kanatlı mavi bir ifrit olarak betimlenmiştir. İnsanları bir çekiçle, zaman zaman da bir balta ile öldürürdü. Ayrıca bazen kızıl saçlı, sakallı bir adam olarak da tasvir edilmiştir. Yunan mitolojisindeki Kharon'a denktir.</strong></p>
+  <p><strong>Culsans:Kapıların ve eşiklerin tanrısı, iki yüzlü Roma tanrısı Janus'un dengidir.</strong></p>
+  <p><strong>Culsu:Geçitlerle ilgili bir yer altı dişi ifriti. Meşale ve makas onun simgelerindendir. Çoğunlukla Culsans'ın yanında temsil edilmiştir.</strong></p>
+  <p><strong>Easun:Efsanevi Yunan kahramanı Jason'un Etrüsk mitolojisindeki dengi.</strong></p>
+  <p><strong>Evan:Kişisel ölümsüzlük tanrısı ve Lasa'lardan biri. Kullanımı yaygın olan <em>Evan</em> ismiyle bir ilişkisi yoktur.</strong></p>
+  <p><strong>Februus:Ölülerin ve saflaşmanın tanrısı. Romalılarca Februalia festivalinde tapılırdı. Şubat ayının ismi ve Roma sıtma tanrısı Febris'in ismi onun isminden türemiş olabilir.</strong></p>
+  <p><strong>Feronia:Pek anlaşılamamış kırsal bir tanrıçadır. Temel olarak ona tapan çeşitli Roma kültleri sayesinde bilinmektedir. <br />
+  </strong></p>
+  <p><strong>Fufluns:Bitki yaşam tanrısı, mutluluk, sağlık, ve herşeyin gelişimi ile ilgilidir. Semia'nın oğludur.<em>Fufluna</em> ya da diğer bir ismi <em>Pupluna</em> olan ve Romalıların <em>Populonia</em> olarak isimlendirdiği şehirde tapınılmıştır. Kısaca Romalılar tarafından sahiplenilmiştir. Dionysus'un dengi olabilir.</strong></p>
+  <p><strong>Hercle:Güç ve su ile ilgisi olan, efsanevi Herkül'ün dengidir.</strong></p>
+  <p><strong>Horta:Ziraat tanrıçası.</strong></p>
+  <p><strong>Laran:Savaş tanrısı.</strong></p>
+  <p><strong>Lasa: Turan'a eşlik eden tanrı ve tanrıçalar. Aşk tanrıları. Mezar bekçiliği de yaparlar.</strong></p>
+  <p><strong>Lasa Vecu:Kehanet tanrıçası, nemf Vegoia ile ilgilidir.</strong></p>
+  <p><strong>Leinth : Aita ile birlikte yeraltı dünyasının kapısında bekleyen yüzü olmayan tanrıça.</strong></p>
+  <p><strong>Lethans:Yeraltı dünyasının koruyucu tanrıçası.</strong></p>
+  <p><strong>Losna:Ay tanrısı, okyanusla da alakalı. Yunan tanrıçası Leucothea ile alakalı.</strong></p>
+  <p><strong>Mania:Etrüsklerde ve Romalılarda ölüm tanrıçası. Yunan delilik tanrısı Mania ile alakası yoktur. Mantus ile birlikte hükmetmiş ve Lares, Manes, hayaletler, ve gecenin diğer ruhlarını doğurmuştur.</strong></p>
+  <p><strong>Mantus:Yeraltı tanrısı ve Mania'nın kocası.</strong></p>
+  <p><strong>Maris:Tarım ve bereket tanrısı. Romalıların tanrısı Mars'ın kaynağıdır.</strong></p>
+  <p><strong>Menrva:Bilgelik, savaş, sanat, okul, ve ticaret tanrıçası. Yunan Athena ve Romalı Minerva ile alakalı.</strong></p>
+  <p><strong>Nethuns:Su kuyuları tanrısı. Sonradan tüm nem, deniz ve suların tanrısı olmuştur. Yunan Poseidon ve Romalı Neptün ile denktir.</strong></p>
+  <p><strong>Nortia:Şans ve kader tanrıçası.</strong></p>
+  <p><strong>Persipnei:Yeraltının kraliçesi. Yunan Persephone ve Romalı Proserpina ile denktir.</strong></p>
+  <p><strong>Satres:Zaman ve gereklilik tanrısı. Roma tanrısı Satürn'ün çıkış noktasıdır.</strong></p>
+  <p><strong>Selvans:Orman tanrısı, Roma tanrısı Silvanus ile akrabadır ve Yunan Silenus ile ilişkilidir.</strong></p>
+  <p><strong>Semla:Fufluns'un annesi, arz tanrıçası. Büyük ihtimalle Yunan tanrıça Semele ile ilişkili.</strong></p>
+  <p><strong>Sethlans:Ateş tanrısı. Yunan Hephaestus ve Romalı Vulcan ile denktir.</strong></p>
+  <p><strong>Tages:Bilgelik tanrısı. Jove'in ya oğlu ya da torunudur.</strong></p>
+  <p><strong>Taitle:Yunan mitolojisi figürlerinden Daedalus'un Etrüsk formu.</strong></p>
+  <p><strong>Tarchon:Etrüsklerin bir kültürel kahramanıdır. Kardeşi Tyrrhenus ile birlikte oniki şehirlik Etrüsk Federasyonu'nu kurmuştur.</strong></p>
+  <p><strong>Tecum:<em>Lucomenes</em> yani yönetici sınıfın tanrısı.</strong></p>
+  <p><strong>Thalna:Doğum tanrıçası ve Tinia'nın karısı.</strong></p>
+  <p><strong>Thesan:Hayatın yaratılmasıyla ilişkilendirilen şafak tanrıçasıdır. Romalı Aurora ve Yunan Eos ile alakalıdır.</strong></p>
+  <p><strong>Thethlumth:Kader ve yeraltı tanrısı.</strong></p>
+  <p><strong>Thufltha:Bir Erinyes, Tinia adına cezaya çarptırır.</strong></p>
+  <p><strong>Tinia:Adı <em>Tins</em> olarak kısaltılmıştır. Etrüsk Tanrılarının baş Tanrısı, göklerin yöneticisi, Uni'nin kocası ve Hercle'nin babasıdır. Yunan Tanrısı Zeus ve Roma Tanrısı Jüpiter ile ilişkilendirlmektedir.</strong></p>
+  <p><strong>Tiv: Ay ilahı, büyük ihtimalle Cermen Tanrısı Tyr ile ilişkili.</strong></p>
+  <p><strong>Tluscva:Bir çift toprak tanrısı Tellus ve Tellumo.</strong></p>
+  <p><strong>Tuchulcha:Yeraltı dünyasının dişi şeytanı. Yarı insan, yarı eşekti ve saçları yılanlar ve akbaba gagalarından oluşuyordu.</strong></p>
+  <p><strong>Turan:Sevgi ve yaşam tanrıçası ve Vulci ismindeki Etrüsk şehrinin koruyucusudur. Turan, resimlerde genellikle kanatlı bir genç kız şeklinde tasvir edilirdi. Güvercinler ve siyah kuğular onun kutsal hayvanlarıydı ve Turan'ın maiyeti Lasas diye anılırdı. Turan ayrıca Maris'in karısıydı. Yunan Tanrısı Aphrodite ve Roma Tanrısı Venus ile ilişkilendirilmektedir.</strong></p>
+  <p><strong>Turms:Ticaret ve mal tanrısı, tanrıların habercisi. Hermes ve Merkür'e benzer.</strong></p>
+  <p><strong>Tvath:Yeniden yaşama dönüş ve ölülere sevgi tanrıçası, Yunan tanrısı Demeter ile ilişkilidir.</strong></p>
+  <p><strong>Tyrrhenus:Bir Etrüsk kültürü kahramanıdır. Tarchon'un ikiz erkek kardeşidir.</strong></p>
+  <p><strong>Uni:Etrüsk mitolojisinin baş tanrıçası, Tinia'nın eşi, Hercle'in annesi, Perugia'nın efendisidir.</strong></p>
+  <p><strong>Usil:Güneş tanrısı.</strong></p>
+  <p><strong>Vanth:Kanatlarında göz olan yeraltı şeytanı. Ölüm habercisidir, ölüm döşeğindeki insanlara ölümde yardımeder. Sonralarda adaleti temsil etmiştir.</strong></p>
+  <p><strong>Veive:İntikam tanrısıdır ve Maris ile alakalıdır.</strong></p>
+  <p><strong>Veltha:Yeryüzü tanrısı. Sonradan baş tanrı olmuştur. Etrüsk medeniyetinin efendisidir. Romalı mevsim tanrısı Vertumnus'un ilhamıdır.</strong></p>
+  <p><strong>Vetis:Yıkım ve ölümün yer altı (ahiret) tanrısı.</strong></p>
+  <p><strong>Vicare:Taitle'nin oğlu, Yunan mitolojisindeki Icarus'dan türemiştir.</strong></p>
+  <p>&nbsp;</p>
+</blockquote>
+<strong>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div><p>
+
+
+
+
+
+</div>
+</body>

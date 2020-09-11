@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1><strong>Mitoloji Tanımı İçin Söylenenler:</strong> </h1>
+      </blockquote>
+<ul>
+  <li><strong>Carl Gustave Jung&rsquo;a göre, &ldquo;Kendi içsel görümüze göre ne olduğumuz ancak mitos aracılığıyla ifade edilebilir. Mitos bilimden daha bireyseldir ve yaşamı ondan daha kesin biçimde ifade eder</strong>.<img src="images/indir (1).jpg" width="150" height="180" /></li>
+</ul>
+<ul>
+  <li><strong>Murry Hope&rsquo;ye göre,  Gerçekte tüm mitler gerçeğin bir parçasını içerirler. Kimi yetkelerin salt mitolojisi saydığı Oera Linda Kitabı, Tufan öncesi ve sonrasındaki kadim Frisya halklarının tarihini aktarmaktadır. </strong></li>
+</ul>
+<ul>
+  <li><strong>Brockhaus adlı Alman ansiklopedisine göre, &ldquo;Tarihde adı geçmeyen, artık unutulmuş büyük kahramanlara ait efsaneler, mitolojinin kadrosuna girer&quot;.</strong></li>
+</ul>
+<ul>
+  <li><strong>E. A. Gardner&rsquo;e göre, Mitoloji, &rdquo;Tabiat varlıkları ile olaylarına, kişilik verme sureti ile anlatma şeklidir.</strong><img src="images/indir (2).jpg" width="147" height="147" /></li>
+</ul>
+<ul>
+  <li><strong>Prof. Dr. B. Ögel&rsquo;e göre, &ldquo;Efsanelerin kendilerine Mythus veya Mythe denir. Mitoloji ise bu efsaneleri inceleyen bir ilim koludur. Mitoloji araştırmaları, din tarihi incelemeleri ile de yakından ilgilidir. Fakat mitoloji, yalnızca bir din tarihi de değildir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Mitoloji, insanlığın ruh aleminin sembollerle ifade edilmiş bir aynasıdır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Ayça Akgüner&rsquo;e göre Mitoloji, &ldquo;Efsane Bilimi&rdquo;dir. Yani ilkel insanların ve insanüstü varlıkların başından geçen masalsı olayların incelenip anlatılmasıdır. Eski çağlarda yaşamış olan insanların doğa olaylarına, sosyal ilişkilerine, dini inançlarına bakış açılarının yorumlanmasıdır. Her ulusun, her ülkenin tarihi; çeşitli efsaneleri, destanları, kahramanlık öykülerini, inanç sistemini tanrılarını, insanlarını, masallarını, söylencelerini barındırır.&rdquo;</strong></li>
+</ul>
+<ul>
+  <li><strong>Yukarıdaki alıntılarda mitolojinin ne olduğu çok iyi bir şekilde ifade edilmiştir. Çünkü mitoloji, doğa üzerine işlenmiş olan prototipler&rsquo;in (İlk Örnekler) harici kısmının hayâllerde canlandırılarak (veya onları canlı görerek) anlatılma şeklidir. Bir başka deyişle, kadim inisiyecilerin trans halindeyken doğa üzerinde gördükleri resim ve şekilleri, doğa üstü olaylarla süsleyerek anlattıkları hikayelere mitoloji adı verilmiştir.</strong></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>&nbsp; </blockquote>
+    </blockquote>
+</blockquote>
+      <strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="hovergallery1"><img src="images/commodus_hercules.jpg" width="225" height="500" /></div>
+
+
+
+
+
+</div>
+</body>

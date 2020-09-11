@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+
+<div class="genel">
+  <div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div>
+  <div class="banner">	<img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+
+</ul>
+    <div class="ortayaziicerik">
+      <p>      
+      <blockquote><strong>
+        <h1>&nbsp;</h1>
+        <h1>Mitoloji Nedir?</h1>
+      </strong></blockquote>
+<p><strong></strong></p>
+<ul>
+        <li>
+          <p><strong><strong>Mitoloji</strong> (Yunanca: &ldquo;söylenen ya da duyulan söz&rdquo; ve &ldquo;konuşma&rdquo;), kelimelerinin birleşiminden oluşmuş olup,</strong>
+          </p>
+          <div class="hovergallery">
+          <img src="images/mitolojinedirresim.jpg" width="300" height="221" /></div>
+        </li>
+        <li><strong> Eski Yunan'da &ldquo;geçmişte söylenenlerin tekrar edilmesi&rdquo; gibi bir anlam barındırmaktayken zamanla Batı dillerinde efsane anlamı kazanmıştır. Çağdaş kullanımda, mitoloji ya belirli bir din veya kültürdeki mitlerin bütününü tanımlar(örneğin: Kelt mitolojisi).Mit sözcüğü gerçekte doğru olmayan bir hikâye veya anlatı için tercih edilir ve çoğunlukla bir yanlışlık, doğru olmayan unsur vurgusu barındırır. Bununla birlikte bu tip bir mit kullanımı veya anlamı mitolojide kabul edilmez ve kullanılmaz</strong></li>
+</ul>
+<ul>
+  
+  <li><strong><strong>Mitoloji kelimesinin Türkçe karşılığı söylenbilim veya söylencebilim idir.</strong></strong></li>
+</ul>
+<ul>
+  <li><strong>Mitoloji bir din veya bir halkın kültüründe tanrılar, kahramanlar, evren ve insanın yaratılışına dair tüm sözlü ve yazılı efsane birikiminin ve bu efsanelerin doğuşlarını, anlamlarını yorumlayıp, inceleyen ve sınıflandıran çalışmalar bütünüdür.</strong></li>
+</ul>
+<strong>
+<p>&nbsp;</p>
+</strong>
+      <blockquote>
+        <h1><span id=".C3.96zellikler">Özellikler</span> </h1>
+        <p>&nbsp;</p>
+      </blockquote>
+      <ul>
+        <li><strong>Efsaneler konu itibarıyla tanrıları, kahramanları ve doğaüstü varlıkları konu alan anlatılardır. Uyumlu bir </strong>
+          <div class="hovergallery"><img src="images/mitogo.jpg" width="320" height="239" /></div>
+        <strong>sistem içerisinde düzenlenmişlerdir ve çoğunlukla geleneksel sözlü aktarı yoluyla (ozanlar, rahipler) şekilde yayılarak canlı kalırlar. Sıklıkla ilgili oldukları topluluğun dinî veya ruhânî yaşantıları ile bağıntılı olan mitler, rahipler veya hükümdarlar tarafından onaylanırlar. Topluluktaki bu ruhânî mevkilerini kaybettikleri zaman, yani topluluğun ruhânî yapısıyla aralarındaki bağ koptuğunda, mitolojik niteliklerini yitirir ve folklora ait söylenceler veya peri masalları haline gelirler.</strong>      </li>
+      </ul>
+      <ul>
+        <li><strong>Bir mit gücünün bir kısmını topluluğun ona olan inancından ve doğru olarak kabul edilmesinden alır. Folklor , tüm kutsal geleneklerin birikimi vardır ve terimin kullanımında, günlük kullanımındakine benzer, herhangi bir kötüleme, aşağılama bulunmamaktadır. Örneğin bir dinin hem kendi mitolojisinden ve tekil olarak içerdiği mitlerden ayrı ayrı söz edilebilir. Bu durum tamamen bilimsel ve tarafsız bir yaklaşım olup, bahsedilen söylence ve kavramlara herhangi bir yaşanlama atfetmediği gibi kötüleme ve aşağılama amacı da barındırmaz.</strong>      </li>
+      </ul>
+      <ul>
+        <li><strong>Efsaneler sık sık gerek evrenin gerekse yerel bölgenin ortaya çıkışını açıklama amacı taşır. Örneğin </strong>
+          <div class="hovergallery">
+            <blockquote>
+              <p><img src="images/mitolojiozellik.jpg" width="258" height="213" /></p>
+            </blockquote>
+          </div>
+        <strong>sırasıyla yaratılış efsaneleri ve kuruluş efsaneleri gibi. Efsaneler ayrıca sık sık doğa olaylarının, başka şekilde açıklanamayan kültürel âdetlerin açıklanması amacını da taşır. Genel olarak efsanelerin doğal anlamda basit bir izah sunmayan herhangi bir şeyi açıklamak için sık sık kullanıldığı söylenebilir.</strong>      </li>
+      </ul>
+      <ul>
+        <li><strong>Mitoloji terimi <a href="yunan.html" title="Yunan mitolojisi" target="_blank">Yunan mitolojisi</a> veya <a href="roma.html" title="Roma mitolojisi" target="_blank">Roma mitolojisi</a> formunda olduğu gibi sıklıkla eski kültürlerin antik hikâyelerine atfen kullanılmaktadır. Bazı efsaneler orijinal olarak sözel bir geleneğin ürünüyken zamanla yazınsal hâle de gelmiştirler. Çoğu efsanenin başlangıç noktası aynı iken değişik coğrafya ve kültürlerden etkilenerek farklılaşmış birden farklı anlatı haline dönüşmüş, orijinal olanı ancak mitologların anlayabileceği kadar kompleks hale gelmişlerdir.</strong>      </li>
+      </ul>
+      <ul>
+        <li><strong>Mit kutsal bir öyküyü anlatır;en eski zamanda, &quot;başlangıçtaki&quot; masallara özgü zamanda olup bitmiş bir olayı anlatır.Mit her zaman bir &quot;yaratılış&quot;ın öyküsüdür: Bir şeyin nasıl yaratıldığını, nasıl varolmaya başladığını anlatır.</strong>      </li>
+      </ul>
+      <blockquote>
+        <h1><span id="S.C4.B1n.C4.B1fland.C4.B1rma">Sınıflandırma</span></h1>
+      </blockquote>
+<p>&nbsp;</p>
+      <ul>
+        <li><strong>Ritüel mitleri belirli dinî uygulamaların yapılışını veya anlamını açıklayan mitlerdir. Tapınma, ibadet eylemi ile yakın bir ilişki içerisindeki bu mitler, dinî veya ruhâni sistemin liturjik yapısında yer alabilirler. Köken mitleri bir âdet, isim, nesne veya canlının kökenini açıklayan mitlerdir.Kült mitleri bir ilahın (veya ilâhî unsurlar taşıyan varlığın) gücünü gösteren kompleks kutlamaları açıklayan mitlerdir. Prestij mitleri genellikle ilâhî unsurlar veya kutsallık atfedilmiş belirli bir halk, kahraman veya şehirle ilgili mitlerdir. Eskatolojik mitler bilinen dünyanın sonunu getireceği öne sürülen bir mutlak sonu, ve/veya buna dair kavram ve olayları açıklayan, kısacası eskatolojik şeyleri konu alan, mitlerdir. Sosyal mitler ise o anki sosyal değer veya uygulamaları savunmak veya güçlendirmek amacı taşıyan mitlerdir. Bir mit birden çok kategoriye uyabilirse de konularına göre efsaneler kabaca 3 kategoride incelenebilirler.</strong>
+          <blockquote>
+            <blockquote>
+              <p><strong>1. Evren ve yaratılışa dair söylenceler </strong><br>
+                <strong>2. Tanrılara dair söylenceler</strong> <br>
+                <strong>3. Kahramanlara dair söylenceler</strong> </p>
+              <p>&nbsp;</p>
+            </blockquote>
+          </blockquote>
+        </li>
+      </ul>
+      <strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2">
+<img src="images/mitoloji_makale_5.jpg" width="252" height="200" />
+<div class="desc">
+  <b>Sözlükte "mitoloji"<br>
+1- Mitleri, doğuşlarını, anlamlarını yorumlayan, inceleyen bilim.<br>
+2- Bir ulusa, bir dine, özellikle yunan, latin uygarlığına ilişkin mitlerin,efsanelerin tümü.
+</b>
+</div>
+</div>
+
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2">
+<img src="images/606px-Hokusai_Phoenix.jpg" width="252" height="200" align="middle" />
+<div class="desc"><p>
+  <p>Mitolojik hayvan resmi, (Ressam: Katsushika Hokusai)<p>
+</div>
+</div>
+
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2">
+<img src="images/603px-TurkMitolojisi.jpg" width="250" height="200" />
+<div class="desc"><p>
+  <p>En köklü mitolojilerden biri de Türk mitolojisidir. Türk mitolojisinde bozkurt önemli bir rol oynamaktadır.<p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div class="clear"></div>
+<div class="copy">&copy; Turk<font color="#FFFFFF">Designers</font></div>
+</body>

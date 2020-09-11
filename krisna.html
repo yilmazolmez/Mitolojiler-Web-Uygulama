@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading"><span dir="auto">Krişna</span></h1>
+        <p><strong>Krişna  yaygın Hint geleneğine göre Vişnu'nun sekizinci avatarıdır ve ona Vişnu'nun bir avatarı olarak tapılır. Çeşitli Vaişnava okullarında ise Yüce Tanrı yani en önemli ve yüksek tanrı olarak tapınılır. Gaudiya Vaişnavizm'de En üstün Kişilik yani Tanrı olarak görülmüş ve böylece onun diğer tüm enkarnasyonların, Vişnu dahil, temeli olduğuna inanılmıştırnı g. Genellikle flüt çalan bir sığır çobanı (örneğin Bhagavata Purana'da) ya da felsefî nasihatler veren genç bir prens (örneğin Bhagavad Gita'da) olarak betimlenir. Geleneksel olarak Krişna'nın Devaki'nin oğlu olduğuna inanılır ki Devaki bir iblisin çocuğu, kötü bir kral olan Kamsa'nın yarı kardeşidir. Kamsa kardeşinin çocuklarından birisinin kendisini öldüreceği haberine sahip olduğu için Devaki'nin birçok oğlunu öldürmüş, fakat sonunda Krişna tarafından öldürülmüştür.</strong></p>
+        <p><strong>Krişna sözcüğü Sanskritçede sözlüksel olarak &quot;siyah&quot; anlamına gelir. Betimlemelerde genellikle mavi veya koyu mavi renkli bir tenle tasvir edilen Krişna, <em>murthis</em>te ise daha çok koyu renkli veya siyahî olarak tasvir edilir. Krişna'nın yaşamına dair birçok hikâye vardır ve bunlar farklı Hindu öğretilerine göre çeşitlilik gösterir. Bununla birlikte genel olarak efsanelerde onun ilahî enkarnasyonuna, pastoral bir çocukluk ve gençlik dönemine, daha sonraları ise bir kahraman olarak yaşayışına değinilir, örneğin birçok canavarı yendiği öne sürülür.</strong></p>
+        <p><strong>Hinduizmin yanı sıra Jainizm, Budizm gibi dinlerde de Krişna'ya rastlanır. Bununla birlikte Krişna'nın rolü veya hikâyesi bu dinlerde değişiklik gösterir. Örneğin Budizmde Krişna'ya Jataka hikâyelerinde Sariputra'nın yaşamlarından biri, efsanevi bir fatih ve Hint kralı olarak yer alır. Ayrıca Krişna Bahai inancında Tanrı'nın bir tecellisi olarak anılır.</strong></p>
+        <p><img src="images/220px-Indischer_Maler_um_1710_001.jpg" width="220" height="229" /></p>
+        <blockquote>
+          <p>&nbsp;</p>
+        </blockquote>
+</blockquote><strong>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+</body>

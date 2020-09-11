@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp;</p>
+        <h1 id="firstHeading"><span dir="auto">Roma mitolojisi</span></h1>
+        <p><strong>Roma mitolojisi, Antik Roma'da yaşayan insanların mitolojik inançlarının bütününe verilen isimdir. Genelde iki ana bölümü olduğu düşünülür; ilk bölüm ki daha sonraları etkin olmuştur ve edebidir, genellikle <a href="yunan.html" title="Yunan mitolojisi" target="_blank">Yunan mitolojisindeki</a> öğelerin <em>Romalılaştırılmış</em> hallerinden meydana gelir, ikinci bölüm ise daha erken dönemlerde etkin olmuş olan ve daha çok kültik olan Yunan-benzeri diğer yarıdan farklı uygulama ve inançlara sahip daha özerk bir bölümdür.</strong></p>
+        <p>&nbsp;</p>
+        <h1><span id="Erken_Roma_Mitinin_Do.C4.9Fas.C4.B1">Erken Roma Mitinin Doğası</span></h1>
+        <p><strong>Arkaik Romalıların bir <em>mite</em> sahip olmadıkları söylenebilir. Bununla kastedilen, sonraki dönemde şairlerinin <a href="yunan.html" title="Yunan mitolojisi" target="_blank">Yunan mitolojisinden</a> esinlenmesine kadarki dönemde, Romalıların tanrıların kökenine dair, Yunandaki Titanomaki veya Zeus'un Hera tarafından baştan çıkartılması gibi, bir mit anlayışının veya sıralı bir anlatının bulunmamasıdır.</strong></p>
+        <p><strong>Romalıların bu erken dönemde sahip oldukları dini yapı iki ana nokta ile tanımlanabilir:</strong></p>
+        <ol>
+          <li><strong>Çok gelişmiş bir ayin sistemi, ruhban okulları ve ilgi tanrı &quot;küme&quot;leri;</strong></li>
+          <li><strong>Kentin (Roma kentinin) bulunuşu ve kuruluşuna dair çok zengin bir tarihi mitler yapısı ki bu yapı fani insanlar ile birlikte çoğu <em>ilahi müdahaleyi</em> de içerir.</strong></li>
+        </ol>
+<p>&nbsp;</p>
+        <h1><span id="Erken_D.C3.B6nem_Mitolojisinde_Tanr.C4.B1lar">Erken Dönem Mitolojisinde Tanrılar</span> </h1>
+      </blockquote>
+<ul>
+  <li><strong>Romalı tanrı anlayışı, erken dönemde, Yunandakinden çok farklı bir biçimdeydi. Örneğin, eğer bir Yunana Demeter'i soracak olsaydınız, büyük ihtimalle, ünlü mitten yani, Hades'in Persephone'yi kaçırışı üzerine Demeter'in yaşadığı acılardan bahsedecektir. Fakat bir Romalıya Ceres hakkında sorarsanız size onun resmi bir rahibinin, flameninin, olduğunu bu rahibin Jüpiter, Mars ve Quirinus'un flamenlerine karşı ast, ama Flora ve Pomona'nın flamenlerine karşı üst olduğunu belirtecektir. Ayrıca onun diğer ziraat tanrıları Liber ve Libera ile birlikte bir üçlü oluşturduğunu da belirtebilir; ve hatta, ona bağlı olan belirli görevleri olan daha ast tanrıları sıralayabilir: Sarritor (yabani otları temizleme), Messor (hasat yapmak), İnsitor (tohum ekmek) vb.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bu örnekten de anlaşılabileceği gibi, arkaik Roma mitolojisi, en azından tanrılar ve tanrı anlayışı açısından, anlatılardan değil de tanrılar arasında ve tanrılar ile insanlar arasında yer alan kenetlenmiş ve kompleks bir ilişkiler ağından oluşmaktaydı.</strong></li>
+</ul>
+<ul>
+  <li><strong>Erken Romalıların özgün dini, daha sonraları birçok farklı ve çelişen inancın eklenmesi ve özellikle de <a href="yunan.html" title="Yunan mitolojisi" target="_blank">Yunan mitolojisinin</a> büyük bir kısmının asimile edilmesiyle, çok farklı bir hal ve yapıya dönüşmüş, farklılaşmıştır.</strong></li>
+</ul>
+<blockquote>
+  <h1><span id="Roma_Tarihi_Hakk.C4.B1nda_Erken_D.C3.B6nem_Mitolojisi">Roma Tarihi Hakkında Erken Dönem Mitolojisi</span> </h1>
+  </blockquote>
+<ul>
+  <li><strong>Tanrılar hakkında bir anlatı geleneği olmasa da Romalıların kentlerinin (Roma'nın) bulunuşu, kuruluşu ve ilk dönemleri hakkında çok zengin ve yarı-tarihi yarı-efsanevi anlatı kültürleri mevcuttu. İlk krallar, Romulus ve Numa gibi, tamamen mitik bir doğaya sahipti ve bu tür efsanevi öğeler Cumhuriyetin ilk dönemlerine kadar uzanabilmekteydi.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bugün, Aeneas ve Liviu'un ilk bir-iki kitabı bu <em>insan mitolojisi</em>nin en önemli kaynaklarını oluşturmaktadır.</strong></li>
+  <li>
+    <h1><span id=".C3.96zg.C3.BCn_Roma_ve_.C4.B0talik_Tanr.C4.B1lar">Özgün Roma ve İtalik Tanrılar</span> </h1>
+  </li>
+  <li><strong>Reski rahiplik, roma ayinsel ibadet ve uygulamalarını iki tanrı sınıfına ayırmaktadır: <em>di indigetes</em> ve <em>de novensides</em> veya <em>novensiles</em>. <em>İndigetes</em> Roma devletinin, şehrinin, özgün tanrılarıydılar ve böyle yaklaşık 30 tanrıya adanmış özel bayramlar (festivaller) mevcuttu. <em>Novensides</em> ise kültleri tarihi süreçte daha sonraları şehre gelmiş tanrılardır ki bunların ortaya çıkışları genellikle belirli bir kriz veya ihtiyacın doğduğu bilinen, belirli tarihlerdir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Erken Roma tanrılarına, <em>di indigetes</em>`e, ilaveten çeşitli etkinlik ve eylemlerde çağırılan özelleşmiş veya uzmanlaşmış küçük tanrılar da mevcuttu. Bu tür eylemlere ayinsel bir boyut kazandırılmıştı, örneğin ekini ekerken belli bir tanrı ismiyle çağırılır, hasat ederkense bir başkası çağırıldı. Aslında bu yoğun ayin kültürünün ve<em>küçük tanrı</em> anlayışının temelinde politeizmden çok bir tür polidemonizm yatmaktaydı; zira bu küçük tanrıların güçleri ancak uzmanlaştıkları/özelleştikleri eyleme yetmekteydi, diğer eylemlerde herhangi bir güçleri bulunmuyor ve bu nedenle de <em>tanrı</em>dan çok bir tür <em>ilahi ruh</em> kavramına yakındılar.</strong></li>
+</ul>
+<ul>
+  <li><strong>İlk panteonun başında Jüpiter, Mars ve Quirinus üçlemesi (ki bu üçünün rahipleri veya <em>flamenleri</em> en yüksek dereceye sahiptiler) ile Janus ve Vesta bulunmaktaydı. Erken dönemde bu tanrıların pek bir kişilikleri (veya şahsi özellikleri) yoktu ve kişisel tarihlerinde evlilik ve soy ağaçları bulunmuyordu.</strong></li>
+</ul>
+<blockquote>
+  <h1>Roma Mitolojisi Ve Tanrıları</h1>
+  <p><strong>Abeona - Roma mitolojisinde çocukların koruyucusu Tanrıça.</strong></p>
+  <p><strong>Abundantia - Roma mitolojisinde fazla etkin olmayan bolluk, başarı ve şans Tanrıçası.</strong></p>
+  <p><strong>Aequitas - Roma mitolojisinde adil işlerin ve anlaşmaların Tanrısı.</strong></p>
+  <p><strong>Alemonia - Henüz doğmamış çocukları besleyen Tanrıça.</strong></p>
+  <p><strong>Anna Perenna - Yeni yıl Tanrıçası. Onun festivali Mart ayının 15 de kutlanırdı. Romalılar amnis perennis (&quot;sonsuz akıntı&quot;) kelimesine çeşitli anlamlar vermişler</strong></p>
+  <p><strong>Antevorte - Roma mitolojisinde geleceğin Tanrıçası.</strong></p>
+  <p><strong>Appiades - Appian su kemerinin yakınlığında tapınakları bulunan beş Tanrıçaya verilen genel ad. Bu Tanrıçalar: Concordia, Minerva, Pax, Venus, ve Vesta idi.</strong></p>
+  <p><strong>Aurora - Şafak Tanrıçası. Yunan mitolojisinde ona Eos demişler.</strong></p>
+  <p><strong>Bellona - Romalı'ların Zafer Tanrıçası. Kapadokya Tanrıçası Ma ve Yunan Tanrıçası Nike ile aynı özellikleri taşımaktadır.</strong></p>
+  <p><strong>Bubona - Roma mitolojisinde atların ve büyükbaş hayvanların Tanrıçası.</strong></p>
+  <p><strong>Camenta - (Egeria) Romalıların Doğum Tanrıçası.</strong></p>
+  <p><strong>Caca - Romalıların Ocak Tanrıçası ve Gigant Cacus'un kızakardeşi.</strong></p>
+  <p><strong>Concordia - Romalıların Barış Tanrıçası.</strong></p>
+  <p><strong>Concus - Eski Roma Tanrılarından biri. Gizlemek, örtmek, saklamak Tanrısıydı.</strong></p>
+  <p><strong>Copia - Servet ve bolluk Tanrıçası.</strong></p>
+  <p><strong>Dea Dia - Büyüme ve gelişme Tanrıçası.</strong></p>
+  <p><strong>Dea Tacita - Kelime anlamıyla 'Sessizliğin Tanrıçası'. Roma mitolojisinde Ölüm Tanrıçası.</strong></p>
+  <p><strong>Diana - Doğa, verimlilik ve çocuk doğum Tanrıçası. O Capua yanındaki Tifata dağında çalışır ve aynı zamanda Ay Tanrıçası görevini de üstlenmiş. Latinlarin de Tanrıçasıydı.</strong></p>
+  <p><strong>Disciplina - Roma mitolojisinde Disiplin ve düzen Tanrıçası.</strong></p>
+  <p><strong>Dius Fidus - Ant ve Yemin Tanrısı. Sabine kökenli bir Tanrıydı.</strong></p>
+  <p><strong>Duellona - Roma Tanrıçası.</strong></p>
+  <p><strong>Edusa - Küçük çoçuklara beslenmeyi öğreten Tanrıça.</strong></p>
+  <p><strong>Egeria - Doğum Tanrıçası. Roma'nın kurucusu Romulus'un koruyucusu.</strong></p>
+  <p><strong>Eventus Bonus - (Bonus Eventus)'İyi Akşamlar'. İş yaşamında başarı Tanrısı. Ayrıca Hasat Tanrısı olarak da bilinir. Heykeli Roma'da, Jupiter tapınağının yanında konulmuştur.</strong></p>
+  <p><strong>Genius - Roma Tanrısı. Bir nevi koruyucu melek görevini görüyordu. Her insanın kendine ait bir Genius'u olduğuna inanılırdı.</strong></p>
+  <p><strong>Grazia'lar - (Graces) - Letafet perilerinin Roma mitolojisindeki isimleri. Yunan mitolojisinde Kharit'ler olarak geçerler. Doğadaki güzellik ve neşe insanların da, Tanrıların da kalplerinde duygukları, güzellik hayranlığı onların eseridir.</strong></p>
+  <p><strong>Fabulinus - Bebeklerin Tanrısı. Efsaneye göre, bu Tanrı Romalı çocuklara konuşmayı öğretirdi.</strong></p>
+  <p><strong>Faunus - Vahşi doğanın ve verimliliğin Tanrısı. Nasihatçı olarak da tapınım ve saygı görmüştü. O Yunanların doğa tanrısı Pan ile aynı özellikleri taşımıştır, boynuz ve yeleleri varmış. Büyükbaş hayvanların da koruyucusu olarak bilinmiştir. Ona Roma Kır Tanrıları Faun'lar eşlik ederlermiş. Faun'lar Yunan mitolojisinde Satyr'ler olarak yerlerini almışlar. Faunus'un bayan benzeri Fauna'dır. Kurt suratı, çelenk ve kadeh Faunus'un simgeleridir.</strong></p>
+  <p><strong>Febris - Telaş ve paniğe karşı koruyucu Tanrıça. Febris (&quot;heyecan&quot;) antik Roma'da üç tapınağa sahipti. Bu tanınaklardan biri Palatine ve Velabrum arasında yer almıştı.</strong></p>
+  <p><strong>Flora - İlkbaharın taze çiçeklerinin Tanrıçası. Quirinalis yakınında tapınağı vardı. Dördüncü yüzyılda bu Tanrıçanın şerefine, 28 Nisan - 1 Mayıs tarihleri arasında Floralia festivali kutlanırdı. Flora Yunanların Chloris'i ile özdeşleştirilmiştir.</strong></p>
+  <p><strong>İanus - (Janus) - Romalıların inancına göre İanus, evlerin kapılarını bekleyen bir Tanrıydı.</strong></p>
+  <p><strong>Junon - (Iuno) Romalıların baş Tanrıça Hera'ya taktıkları ad.</strong></p>
+  <p><strong>Jupiter - Romalıların baş Tanrı Zeus'a verdikleri ad.</strong></p>
+  <p><strong>Juturne - (Juturna) Romalıların Su Kaynakları Tanrıçası. Jupiter onu periye çevirmiş ve Latium yakınlığındaki Lavinium'da bir su kaynağını ona armağan etmişti. O Fontus (Fons)'un annesi ve Janus'un karısıydı.</strong></p>
+  <p><strong>Juventus - Gençlik Tanrıçasının adı. Romalılar gençlik çağına giren delikanlılara bu adı koyardı.</strong></p>
+  <p><strong>Kybele - Roma ve eski Anadolu mitolojisinde Tanrıların anası. Onun karakteri Phyrgia'da ortaya çıkmış, daha sonra Yunanistan'a kadar yayılmıştır. Yunanlarda Rheia onun yerini almıştır.</strong></p>
+  <p><strong>Lar - Romalıların ocakbaşı Tanrısı.</strong></p>
+  <p><strong>Larv'lar - Roma inançlarına göre tehlikeli ve insanlara bela olan ruhlar. Anlatılanlara göre, Larv'lar ellerinde uğursuzluğun sembolü olan birer baykuş taşırlardı.</strong></p>
+  <p><strong>Libitina - Roma da ölüler için yapılan merasimi koruyan Tanrıça</strong></p>
+  <p><strong>Lima - Başlangıçlar Tanrıçası.</strong></p>
+  <p><strong>Luna - Romalıların Ay Tanrıçasına verdikleri ad. Yunanlar ona Selene derler.</strong></p>
+  <p><strong>Lucina - Kadınlara doğumda yardım eden ve sancıları azaltan Tanrıça. Sonraları 'çocuklara ışık bahşeden' anlamına gelen Juno adını almıştır.</strong></p>
+  <p><strong>Maia - Mayıs ayına adını veren Tanrıça. Bu ayda ona kurbanlar verilir, adaklar adanırdı. Mitolojide Maia Vulcan'ın yardımcısıydı. Bazen Fauna ve Ops ile eşit tutulurdu.</strong></p>
+  <p><strong>Mars - İlk başlarda bitkilerin köklerini besleyen bir Tanrı olmasına rağmen daha sonra Yunan mitolojisinden etkilenerek Savaş Tanrısı sıfatını kazanmıştı. Yunanlıların aksine Romalılar onu severlerdi. Onlara göre ise Mars üstün, soylu bir görünüşü olan hiç yenilmeyen bir Tanrıydı.</strong></p>
+  <p><strong>Mater Matuta - Romalıların şafak Tanrısı.</strong></p>
+  <p><strong>Minerva - (Minerve) Romalıların Zeka Tanrıçası Athena'ya verdikleri isim.</strong></p>
+  <p><strong>Moneta - Başarı Tanrıçası.</strong></p>
+  <p><strong>Nascio - Roma mitolojisinde Doğum Tanrıçalarından biri.</strong></p>
+  <p><strong>Necessitas - Zaruret, Zorunluluk Tanrıçasıydı. Kader Tanrıçası olarak da bilinmekteydi. Romalılar onun insan şeklinde olduğuna inanırlardı. Yunanlardaki ismi Ananke idi.</strong></p>
+  <p><strong>Neptun - Romalıların Deniz Tanrısı Poseidon'a verdikleri ad.</strong></p>
+  <p><strong>Nerio - Romalılarda savaş Tanrısının karısı olup, kahramanlığı temsil eder.</strong></p>
+  <p><strong>Nundina - Roma mitolojisinde yeni doğan bebeğe isim takıldığı dokuzuncu günün Tanrıçası.</strong></p>
+  <p><strong>Occator - Acı ve üzüntü Tanrısy.</strong></p>
+  <p><strong>Orcus - Ölüm ve yeraltı dünyasının Tanrısı. Bazen çok zalim ve korkunç, bazense oldukça iyi bir Tanrı olarak tanımlanmıştır. Yunan Tanrııs Hades'le aynı özellikleri taşımıştı.</strong></p>
+  <p><strong>Pales - Romalıların koyun sürülerini koruyucusu olduğuna inandıkları Tanrı.</strong></p>
+  <p><strong>Parkae - Romalıların Ralih Tanrıçalarına verdikleri ad.</strong></p>
+  <p><strong>Penat'lar - Romalıların Ev Tanrılarına verdikleri ad.</strong></p>
+  <p><strong>Pilumunus - Yeni doğan çocukları koruyan Roma Tanrıçası.</strong></p>
+  <p><strong>Poena - Roma mitolojisinde ceza Tanrıçası</strong></p>
+  <p><strong>Pomona - Romalıların Meyve Tanrıçası.</strong></p>
+  <p><strong>Puta - Ağaçlar ve asmaları budamakla ilgili olan Roma Tanrıçası.</strong></p>
+  <p><strong>Romulus ile Remus - Roma mitojisinde ikiz kardeşler. Mars ile Rea Silvanın oğulları. Küçük yaşta Tiber nehrine bırakılan ikizler, dişi bir kurt tarafından bulunmuş, onun sütüyle beslenmişlerdi. Sonra onları Picus adında bir çoban keşfetmiş, evine götürüp besleyip büyütmüştü. Kardeşlerin kaderinde Roma şehrinin temelini koymak vardı. Büyüdükten sonra iki kardeş arasında şehri hangisinin kuracağı konusunda tartışma çıkmış ve bu tartışma Remus'un ölümüyle sonuçlanmıştı. Romulus Roma şehrinin kurucusu ve ilk kralı oldu. Roma'nın kurucusu Romulus da tanrısallaştırılmıştı.</strong></p>
+  <p><strong>Salus - Romalıların Sağlık Tanrıçası.</strong></p>
+  <p><strong>Saturnus - Roma Tanrısı Satürnüs çiftçilerin Tanrısı olarak görülmüştür. Mitolojiye göre Satürnüs ve karısı hasat Tanrıçası olan Ops ekincileri korurmuş. Yunan mitolojisinin etkisi ile sonraları Satürnüs Kronos kişiliği kazanmıştır. Satürnüs'ün İtalya'yı yönettiği devre 'altın çağ' adını vermişler.</strong></p>
+  <p><strong>Silvanus - Romalıların Orman, Bağ - bahçe Tanrısı.</strong></p>
+  <p><strong>Summanus - Romalıların gece çakan Şimşek Tanrısı.</strong></p>
+  <p><strong>Tellus - Romalıların Yunan mitolojisindeki Toprak Ana (Gaia) ya verdikleri ad.</strong></p>
+  <p><strong>Terminüs - Romalıların sınır taşı Tanrısı.</strong></p>
+  <p><strong>Vacuna - Sabinelilerin Tarım Tanrıçası. Vacuna'ya kutsal orman Reate'nin bulunduğu bölgede tapınılmıştır.</strong></p>
+  <p><strong>Velovis - Bir Roma Tanrısı. Yer altı Tanrılarından sayılmakta, volkanlar ve balıkları bunun idare ettiğine inanılır.</strong></p>
+  <p><strong>Veritas - Adalet ve Gerçek Tanrıçası. Satürnüs'ün kıız.</strong></p>
+  <p><strong>Vesta - Aile ocağı Tanrıçası</strong></p>
+  <p><strong>Virtus - Roma mitolojisinde cesaret ve savaş gücünün Tanrısı</strong></p>
+  <p><strong>Vulcanus - Ateş Tanrısı. Demircilik ve sanatla da uğraşır. Onun dökümhanesi Etna dağındadır. Burada o yardımcıları ile beraber Tanrılara ve kahramanlara silah yapardı. Yunan mitolojisinde bu Tanrı Hephaestus adını almıştı.</strong></p>
+  <h1>&nbsp;</h1>
+  <h1><span>Yabancı Tanrılar</span> </h1>
+  <p><strong>Roma devleti etrafındaki bölgeleri fethettikçe komşu kültür ve toplulukların yerel tanrıları da Roma mitolojisine giriş yapmıştır. Romalılar geleneksel olarak yeni fethedilen yerlerin tanrılarına da kendi özgün tanrıları ile bir tutmuş aynı saygı ve onuru bahşetmişlerdir. Birçok seferde yeni fethedilen bölgenin tanrılarının da Roma'da yeni tapınaklarda yer almaları için davette bulunulmuştur. Bu nedenle Roma'ya özgü olmayan birçok farklı kült, tanrı ve tanrıça Roma mitolojisine giriş yapmış kimi zaman bu yeni tanrı ve tanrıçalar hali hazırda Roma mitolojisinde var olan belirli tanrı ve tanrıçalarla özdeşleştirilmiştir</strong>.</p>
+  <ul><li><img src="images/61px-Mithra_Chiaramonti_Inv1705.jpg" width="61" height="119" /><div>
+    <div> </div>
+    <div>
+      <p>Pers kültüründen gelen Mitra</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div><img src="images/Isis-Fortuna_MBA_Lyon_E112.jpg" width="60" height="119" /></div>
+        </div>
+      <div>
+        <p>Mısır ana tanrıçası İsis</p>
+        </div>
+      </div>
+    <div>
+      <div>
+        <div><img src="images/66px-Cybele_formiae.jpg" width="66" height="119" /></div>
+        </div>
+      <div>
+        <p><a href="kibele.html" target="_blank">Kibele</a>, Anadolu kökenli ana tanrıça</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <p>.</p>
+  <h1><span id="Baz.C4.B1_.C3.96nemli_Roma_Tanr.C4.B1lar.C4.B1">Bazı Önemli Roma Tanrıları</span> </h1>
+  <ul>
+    <li>
+      <div>
+        <div>
+          <div><img src="images/68px-Ceres_statue.jpg" width="68" height="119" /></div>
+          </div>
+        <div>
+          <p>Ceres, Dünya tanrıçası</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/66px-Cupidon.jpg" width="66" height="119" /></div>
+          </div>
+        <div>
+          <p>Cupid, Aşk tanrısı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/84px-DianaLouvre.jpg" width="84" height="119" /></div>
+          </div>
+        <div>
+          <p>Diana, Avcılık ve Ay tanrıçası</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/120px-Janus-Vatican.JPG" width="120" height="105" /></div>
+          </div>
+        <div>
+          <p>Janus, Kapıların tanrısı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/101px-IngresJupiterAndThetis.jpg" width="101" height="120" /></div>
+          </div>
+        <div>
+          <p>Jüpiter, Tanrıların kralı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/Rome_Mercury_Relief.jpg" width="120" height="120" /></div>
+          </div>
+        <div>
+          <p>Merkür, Haberci tanrı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/60px-Minerva_onyx_Louvre_Ma2225.jpg" width="60" height="120" /></div>
+          </div>
+        <div>
+          <p>Minerva, Hikmet tanrıçası</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/109px-Pluton_Chapu_chateaudeChantilly.jpg" width="109" height="120" /></div>
+          </div>
+        <div>
+          <p>Plüton, Yeraltı dünyasının kralı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/78px-Neptune_Fontana_del_Nettuno_Rome_2006.jpg" width="78" height="119" /></div>
+          </div>
+        <div>
+          <p>Neptün, Denizlerin tanrısı</p>
+          </div>
+        </div>
+      </li>
+    
+    <li>
+      <div>
+        <div>
+          <div><img src="images/120px-Diego_Velasquez,_The_Forge_of_Vulcan.jpg" width="120" height="92" /></div>
+          </div>
+        <div>
+          <p>Vulcan, Demircilik tanrısı</p>
+          </div>
+        </div>
+      </li>
+  </ul>
+  <p>.</p>
+</blockquote>
+<strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2"><img src="images/She-wolf_suckles_Romulus_and_Remus.jpg" width="250" height="200" />
+  <div class="desc">Romulus ve Remus'u emziren dişi kurt heykeli.</div>
+</div>
+
+</div>
+</div>
+</body>

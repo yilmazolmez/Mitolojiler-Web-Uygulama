@@ -1,0 +1,551 @@
+	@charset "utf-8";
+	.genel {
+	height: auto;
+	width: 1200px;
+	}
+	.banner {
+	width: 890px;
+	margin-left: 265px;
+	height: auto;
+	}
+    .solustresim {
+		width: 200px;
+		float: left;
+		height: 300px;
+		margin-left: 35px;
+	}
+	
+	
+	.link {
+	width: 870px;
+	float: right;
+	margin-right: 55px;
+	height: auto;
+	}
+
+
+	.solaltresım {
+		float: left;
+		width: 210px;
+		margin-top: 50px;
+	}
+	
+	
+	.sollink {
+		sheight: auto;
+		width: 210px;
+		margin-top: 125px;
+		margin-left: 35px;
+	}
+	.ortayaziicerik {
+	color: #000;
+	background-color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	height: auto;
+	}
+	
+	.solidblockmenu{
+		margin: 0;
+		padding: 0;
+		float: left;
+		font: bold 13px Arial;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 1em;
+		border: 1px solid #625e00;
+		border-width: 1px 0;
+		background-color: #000;
+		background-image: url(images/blockdefault.gif);
+		background-repeat: repeat-x;
+		background-position: center center;
+	}
+	.baslik {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 10px;
+		color: #FFF;
+	}
+	
+	
+	.solidblockmenu li{
+	display: inline;
+	}
+	
+	.solidblockmenu li a{
+	float: left;
+	color: white;
+	padding: 9px 11px;
+	text-decoration: none;
+	border-right: 1px solid white;
+	}
+	
+	.solidblockmenu li a:visited{
+	color: white;
+	}
+	
+	.solidblockmenu li a:hover, .solidblockmenu li .current{
+		color: white;
+		background-color: transparent;
+		background-image: url(images/blockactive.gif);
+		background-repeat: repeat-x;
+		background-position: center center;
+	}
+	.hovergallery img{
+	-webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+	-moz-transform:scale(0.8); /*Mozilla scale version*/
+	-o-transform:scale(0.8); /*Opera scale version*/
+	-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+	-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+	-o-transition-duration: 0.5s; /*Opera duration version*/
+	opacity: 0.7; /*margin between images*/
+	float: right;
+	margin-left: 0;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	margin-top: 55px;
+	}
+	
+	.hovergallery img:hover{
+	-webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+	-moz-transform:scale(1.1); /*Mozilla scale version*/
+	-o-transform:scale(1.1); /*Opera scale version*/
+	box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+	opacity: 1;
+	}
+	
+	
+	
+	.imagepluscontainer{ /* main image container */
+	position: relative;
+	z-index: 1;
+	margin-top: 140px;
+	margin-left: 10px;
+	}
+
+	
+	.imagepluscontainer img{ /* CSS for image within container */
+	position: relative;
+	z-index: 2;
+	-moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	}
+	
+	.imagepluscontainer:hover img{ /* CSS for image when mouse hovers over main container */
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-moz-transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
+	}
+	
+	.imagepluscontainer div.desc{ /* CSS for desc div of each image. */
+	position: absolute;
+	width: 238px;
+	z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
+	bottom: -5px; /* Default position of desc div is bottom of container, setting it up to slide down */
+	left: 1px;
+	padding: 8px; /* black bg with 80% opacity */
+	color: #000;
+	-moz-border-radius: 0 0 8px 8px; /* CSS3 rounded borders */
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+	opacity: 0; /* Set initial opacity to 0 */
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); /* CSS3 shadows */
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-moz-transition: all 0.5s ease 0.5s; /* Enable CSS3 transition on desc div. Final 0.5s value is the delay before animation starts */
+	-webkit-transition: all 0.5s ease 0.5s;
+	-o-transition: all 0.5s ease 0.5s;
+	-ms-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+	background-color: rgba(255,255,255,0.8);
+	height: 123px;
+	}
+	
+	.imagepluscontainer div.desc a{
+		color: #FFF;
+	}
+	
+	.imagepluscontainer:hover div.desc{ /* CSS for desc div when mouse hovers over main container */
+	-moz-transform: translate(0, 100%);
+	-webkit-transform: translate(0, 100%);
+	-ms-transform: translate(0, 100%);
+	-o-transform: translate(0, 100%);
+	transform: translate(0, 100%);
+	opacity:1; /* Reveal desc DIV fully */
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the right edge of the image ###*/
+	
+	.imagepluscontainer div.rightslide{
+	width: 150px; /* reset from default */
+	top:15px;
+	right:0;
+	left:auto;  /* reset from default */
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 0 8px 8px 0;
+	-webkit-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
+	}
+	
+	.imagepluscontainer:hover div.rightslide{
+	-moz-transform: translate(100%, 0);
+	-webkit-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	-o-transform: translate(100%, 0);
+	transform: translate(100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the left edge of the image ###*/
+	
+	.imagepluscontainer div.leftslide{
+	width: 150px;  /* reset from default */
+	top:15px;
+	left:0;
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 8px 0 0 8px;
+	-webkit-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	}
+	
+	.imagepluscontainer:hover div.leftslide{
+	-moz-transform: translate(-100%, 0);
+	-webkit-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	transform:translate(-100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the top edge of the image ###*/
+	
+	.imagepluscontainer div.upslide{
+	top:0;
+	bottom:auto;  /* reset from default */
+	padding-bottom:10px;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	}
+	
+	.imagepluscontainer:hover div.upslide{
+	-moz-transform: translate(0, -100%);
+	-webkit-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform:translate(0, -100%);
+	}
+
+.hovergallery1 img{
+	-webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+	-moz-transform:scale(0.8); /*Mozilla scale version*/
+	-o-transform:scale(0.8); /*Opera scale version*/
+	-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+	-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+	-o-transition-duration: 0.5s; /*Opera duration version*/
+	opacity: 0.7;
+	margin-left: 20px;
+	margin-top: 55px;
+	}
+	
+	.hovergallery1 img:hover{
+	-webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+	-moz-transform:scale(1.1); /*Mozilla scale version*/
+	-o-transform:scale(1.1); /*Opera scale version*/
+	box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+	opacity: 1;
+	}
+
+
+	.imagepluscontainer1{ /* main image container */
+	position: relative;
+	z-index: 1;
+	margin-top: 75px;
+	margin-left: 45px;
+	}
+
+	
+	.imagepluscontainer1 img{ /* CSS for image within container */
+	position: relative;
+	z-index: 2;
+	-moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	}
+	
+	.imagepluscontainer1:hover img{ /* CSS for image when mouse hovers over main container */
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-moz-transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
+	}
+	
+	.imagepluscontainer1 div.desc{ /* CSS for desc div of each image. */
+	position: absolute;
+	width: 168px;
+	z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
+	bottom: -75px; /* Default position of desc div is bottom of container, setting it up to slide down */
+	left: -1px;
+	padding: 8px; /* black bg with 80% opacity */
+	color: #000;
+	-moz-border-radius: 0 0 8px 8px; /* CSS3 rounded borders */
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+	opacity: 0; /* Set initial opacity to 0 */
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); /* CSS3 shadows */
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-moz-transition: all 0.5s ease 0.5s; /* Enable CSS3 transition on desc div. Final 0.5s value is the delay before animation starts */
+	-webkit-transition: all 0.5s ease 0.5s;
+	-o-transition: all 0.5s ease 0.5s;
+	-ms-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+	background-color: rgba(255,255,255,0.8);
+	height: 135px;
+	}
+	
+	.imagepluscontaine1r div.desc a{
+		color: #FFF;
+	}
+	
+	.imagepluscontainer1:hover div.desc{ /* CSS for desc div when mouse hovers over main container */
+	-moz-transform: translate(0, 100%);
+	-webkit-transform: translate(0, 100%);
+	-ms-transform: translate(0, 100%);
+	-o-transform: translate(0, 100%);
+	transform: translate(0, 100%);
+	opacity:1; /* Reveal desc DIV fully */
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the right edge of the image ###*/
+	
+	.imagepluscontainer1 div.rightslide{
+	width: 150px; /* reset from default */
+	top:15px;
+	right:0;
+	left:auto;  /* reset from default */
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 0 8px 8px 0;
+	-webkit-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
+	}
+	
+	.imagepluscontainer1:hover div.rightslide{
+	-moz-transform: translate(100%, 0);
+	-webkit-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	-o-transform: translate(100%, 0);
+	transform: translate(100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the left edge of the image ###*/
+	
+	.imagepluscontainer1 div.leftslide{
+	width: 150px;  /* reset from default */
+	top:15px;
+	left:0;
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 8px 0 0 8px;
+	-webkit-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	}
+	
+	.imagepluscontainer1:hover div.leftslide{
+	-moz-transform: translate(-100%, 0);
+	-webkit-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	transform:translate(-100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the top edge of the image ###*/
+	
+	.imagepluscontainer1 div.upslide{
+	top:0;
+	bottom:auto;  /* reset from default */
+	padding-bottom:10px;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	}
+	
+	.imagepluscontainer1:hover div.upslide{
+	-moz-transform: translate(0, -100%);
+	-webkit-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform:translate(0, -100%);
+	}
+
+
+	
+	
+	
+	.imagepluscontainer2{ /* main image container */
+	position: relative;
+	z-index: 1;
+	margin-top: 140px;
+	margin-left: 10px;
+	}
+
+	
+	.imagepluscontainer2 img{ /* CSS for image within container */
+	position: relative;
+	z-index: 2;
+	-moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	}
+	
+	.imagepluscontainer2:hover img{ /* CSS for image when mouse hovers over main container */
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-moz-transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
+	}
+	
+	.imagepluscontainer2 div.desc{ /* CSS for desc div of each image. */
+	position: absolute;
+	width: 228px;
+	z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
+	bottom: -7px; /* Default position of desc div is bottom of container, setting it up to slide down */
+	left: 0px;
+	padding: 8px; /* black bg with 80% opacity */
+	color: #000;
+	-moz-border-radius: 0 0 8px 8px; /* CSS3 rounded borders */
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+	opacity: 0; /* Set initial opacity to 0 */
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); /* CSS3 shadows */
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-moz-transition: all 0.5s ease 0.5s; /* Enable CSS3 transition on desc div. Final 0.5s value is the delay before animation starts */
+	-webkit-transition: all 0.5s ease 0.5s;
+	-o-transition: all 0.5s ease 0.5s;
+	-ms-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+	background-color: rgba(255,255,255,0.8);
+	height: 123px;
+	}
+	
+	.imagepluscontainer2 div.desc a{
+		color: #FFF;
+	}
+	
+	.imagepluscontainer2:hover div.desc{ /* CSS for desc div when mouse hovers over main container */
+	-moz-transform: translate(0, 100%);
+	-webkit-transform: translate(0, 100%);
+	-ms-transform: translate(0, 100%);
+	-o-transform: translate(0, 100%);
+	transform: translate(0, 100%);
+	opacity:1; /* Reveal desc DIV fully */
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the right edge of the image ###*/
+	
+	.imagepluscontainer2 div.rightslide{
+	width: 150px; /* reset from default */
+	top:15px;
+	right:0;
+	left:auto;  /* reset from default */
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 0 8px 8px 0;
+	-webkit-border-radius: 0 8px 8px 0;
+	border-radius: 0 8px 8px 0;
+	}
+	
+	.imagepluscontainer2:hover div.rightslide{
+	-moz-transform: translate(100%, 0);
+	-webkit-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	-o-transform: translate(100%, 0);
+	transform: translate(100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the left edge of the image ###*/
+	
+	.imagepluscontainer2 div.leftslide{
+	width: 150px;  /* reset from default */
+	top:15px;
+	left:0;
+	bottom:auto;  /* reset from default */
+	padding-left:15px;
+	-moz-border-radius: 8px 0 0 8px;
+	-webkit-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	}
+	
+	.imagepluscontainer2:hover div.leftslide{
+	-moz-transform: translate(-100%, 0);
+	-webkit-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	-o-transform: translate(-100%, 0);
+	transform:translate(-100%, 0);
+	}
+	
+	/*### Below CSS when applied to desc DIV slides the desc div from the top edge of the image ###*/
+	
+	.imagepluscontainer2 div.upslide{
+	top:0;
+	bottom:auto;  /* reset from default */
+	padding-bottom:10px;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	}
+	
+	.imagepluscontainer2:hover div.upslide{
+	-moz-transform: translate(0, -100%);
+	-webkit-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform:translate(0, -100%);
+	}
+a:link {
+	color: #F00;
+	text-decoration: none;
+}
+a:visited {
+	color: #F00;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.copy {
+	width: 870px;
+	margin-left: 275px;
+	text-align: right;
+	color: #F00;
+}
+.clear {
+	clear: both;
+}

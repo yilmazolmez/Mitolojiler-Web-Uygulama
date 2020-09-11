@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading"><span dir="auto">Hint mitolojisi</span></h1>
+        <p><strong><img src="images/trimurti.jpg" width="303" height="435" align="left" />Hint mitolojisi, Sanskrit yazınında varlığını bulan ve Hinduizmle ilintili anlatılar bütünüdür. Nepal ve Hint kültürünün bir alt kümesi olarak algılanan Hint mitolojisi, tekdüze bir yapıdan çok farklı gelenek, sınıf, felsefe ve coğrafyaya sahip insanların bir araya getirdiği öyküleri temsil etmektedir. Kutsal metinler olan Vedalardan beslenmektedir.</strong></p>
+        <p><strong>Dünyadaki tüm mitolojiler içinde belki de en karmaşığı Hint mitolojisidir. Bunun nedenlerinden biri, Hint mitolojisinin çok eskilere dayanmasıdır. Hindular'ın en eski dinsel kitapları olan Rigveda'mn 3.000 yıldan daha eski olduğu sanılıyor. Bu eski kitabın bile, efsanelerin ortaya çıkışından çok sonra yazıldığı sanılmaktadır.<br />
+          <br />
+          Rigveda'yı açıklayan ilk düşünürler, kitabın tanrıları üç gruba ayırdığını söylemişlerdir: Gökyüzünde yaşayanlar; havada ama yeryüzüne yakın yaşayanlar ve yeryüzünde yaşayanlar. Yeryüzünde yaşayan en önemli tanrı, ateş tanrısı Agni'ydi. Fırtına tanrısı İndra havada, Güneş tanrısı Surya gökyüzünde yaşardı. Bir başka tanrı da gökyüzünün kendisi olan Dyaus'tu. Dyaus adı ile Yunan tanrısı Zeus'un adı arasında bir bağlantı vardır; Zeus gibi bu tanrı da tüm tanrıların babasıydı.<br />
+          <br />
+          Bu ilk tanrılardan en güçlüsü İndra'ydı. Yıldırımlar yağdırarak dağları devirir, dağların içindeki suları tutsak eden canavarı öldürürdü. Eski Hindular, bitkilerin büyümesini sağlayan yağmurları getiren ilk fırtınaları böyle açıklıyorlardı. Adama benzediği düşünülen İndra'nın tersine, Agni resimlerde çoğunlukla ateşe benzetilirdi. Üç bacağı ve yedi ışını vardı. Çok parlaktı, alev rengindeydi ve 1.000 gözüyle her yöne bakabilirdi.<br />
+          <br />
+          Sonraları Hint tanrılarının en önemlisi olan Vişnu ve Şiva bugün de Hindular'ın baş tanrılarıdır. Vişnu çoğu kez bir kartalın üzerinde uçan, dört kollu bir tanrı olarak gösterilir. Yeryüzünde değişik insan ve hayvan görünümlerinde belirdiğine inanılır.<br />
+          <br />
+          Vişnu gibi, Şiva da dört kolludur. Bazen tek, bazen üç, bazen de beş kafalı olarak gösterilir. İnsan kafataslarından oluşmuş bir zincir taşır. Şiva'nın dünyanın sonunu getireceği de söylenir; ama aynı zamanda bebekleri dünyaya getiren de odur. Bu ve başka birçok insan benzeri tanrının yanı sıra Hintliler bazı ırmak, kuyu, dağ, taş, ağaç ve hayvanların da tanrı olduğuna inanırlardı.<br />
+          <br />
+        </strong></p>
+        <p>&nbsp;</p>
+        <h1>Vedik Dönem</h1>
+        <p><strong><img src="images/vrtra_indra.jpg" width="200" height="264" align="left" />Hint mitolojisinin ilk kaynağı Vedalar&rsquo;dır. Rigveda'da adına ilahiler sunulmuş olan tanrılar ya da adı geçen tanrılar, tanrıçalar ve aşağı yaratıklar, Hint mitolojisinin çekirdeğini oluştururlar. Baş tanrılar İndra, Agni, Varuna, Soma, Vayu, iki Aşvin, Surya, Vishnu, Mitra, Marutlar, Brihaspati, Vivasvat, Savitri, Puşan, Rudra, Ribhular, Dyaus, Parcanya, Matarişvan, Bhaga, Vastoshpati, Yama, Vişvakarman, Tvashtri'dir. Baş tanrıçalar ise, Aditi, Prithivi, Ushas, Sarasvati vs.'dir. Ayrıca Rakshasa, Pişaça, Gandharva, Apsaras gibi aşağı mitolojik yaratıklardan ve Manyu (Öfke), Şraddha (inanç), Pracapati (Yaratıkların Efendisi) gibi soyut tanrılardan sözedilir.<br />
+          <br />
+          Vedik dönemin diğer bir kaynağı Brahmanalar'dır. Bunlar, kurban törenleriyle ilgili metinlerdir. Kurbanı yaptıran brahmanlar, tanrı ile eş tutulur hale getirilmiştir. Bu eserlerde, Rigveda'da popüler olan tanrılar yerine, eskiden pek önemi olmayan Pracapati yüceltilir; bunun da yerini, daha sonraki edebiyatta Brahma alır. Diğer Vedik tanrılar da ortalıkta görünmekle birlikte, renkleri bir. hayli soluktur ve bütün güçlerini kendilerine sunulan kurbanlara borçludurlar. Bir yandan da Rigveda'da. ikinci planda gözüken bazı tanrılar bu ayin edebiyatında birinci plana fırlamıştır. Buna en iyi örnek Vishnu ve Rudra (Şiva)'dır. Tanrıların (devalar) ve şeytanların (asuralar) babası olarak görülen Pracapati, daha sonra Brahma olduğundan, bu üçü (Brahma- Vishnu-Şiva) destan döneminde oluşturacakları üçlünün işaretini verir gibidirler. <br />
+          <br />
+        Brahmanalar'a ek olarak yazılmış metinlere Aranyakalar (Orman Metinleri) denir. Bunların ana konuşu kurban sembolcülüğü ve mistisizmi ile Brahman felsefesidir. Bunlar, orman çilekeşlerinin oluşturduğu eserler olup, Upanishadlar ile. aralarında kesin bir sınır çizmek olanaksızdır. En büyük Upanishadlar'ın yazıldığı bağımsız metinlerin ait olduğu tarih, Buddha ve Panini'den öncedir. Bu metinlerin mitolojik yönden çok zengin olduklarını söyleyemeyiz. Pracapati gene popülerdir. Rudra artık Şiva haline gelmektedir.</strong></p>
+        <h1>Epik Dönem</h1>
+        <p><strong>Eskiyen Vedik dönemin mitolojik malzemesi Epik dönemde yerini yeni tanrısal güçlere, yeni din anlayışına bırakmıştı. Bu sırada vedik tanrılar tamamen ortadan kalkmadılar ama eski önemlerim yitirdiler. Veda dönemini simgeleyen baş tanrı İndra da bir güç karşılaştırması yapılan ve brahmanların ne kadar üstün olduğunu ispatlayan bir ilah olarak kaldı. Epik dönem tanrıları Brahma (karısı Sarasvati), Vishnu (karısı Lakshmi) ve Şiva (karısı Devi, Uma, Parvati veya Kali, Durga) en üst sıraya yerleşti. Vishnu'nun avatara'ları olan, destan kahramanları Rama ve Krishna da bu sıralamada yer aldı. <br />
+          <br />
+        Hint mitolojisinin ikinci büyük kaynak grubu, destanlar ve Puranalar'dır. En eskisi Ramayana olarak kabul edilen destanların M.Ö. 200 ile M.S. 400 tarihleri arasında yavaş yavaş yazıya geçirildiği tahmin edilmektedir. İlk yazılıp bitirilen Ramayana, sonra Mahabharata'dır. Bir destan mı yoksa Purana mı olduğu tartışılan Harivamşa ise, her ikisinden de sonraki bir döneme aittir. Hindistan'da Maurya Hanedanlığı dönemi, birçok din ve mezhebin kendini ifade etme yarışma girdiği ve taraftar kazanmaya çalıştığı bir dönemdir. Bu dönemde Vishnuitlerin destanlara egemen olduğunu ve destan kahramanları Rama ve Krishna'yı, Vishnu'nun bir bedenlenmesi olarak gösterdiklerini görüyoruz. Oysa Caynist ve Buddhistler de kendi görüşlerini yaymaya çalışmakta ve destanların bağımsız bölümlerinde kendi etkilerini hissettirnekteydi.</strong></p>
+        <p><strong>Buddhizmin çok güçlendiğini gören Vishnucular, Buddha' nın da Vishnu'nun bir biçimi olduğunu söylemekten geri kalmadılar.<br />
+          <br />
+          24.000 beyit ve yedi kitaptan oluşan Ramayana Destanı, mitolojiye yeni isimler katmaktadır. Sita adına Rigveda'da rastlanıyorsa da, Rama, Hanuman, Ravana gibi karakterler bu güzel eserle efsane dağarcığına katılmaktadır. Toplam 100.000 beyit olan ve on sekiz kitaptan oluşan Mahabharata Destanı da, başta Krishna olmak üzere Pandavaları, Kuruları ve tanrı Dharma'yı mitolojide belirginleştirmektedir. Hari, Vishnu, Krishna, aynı tanrının değişik isimleridir. Harivamşa, Vishnu'nun soyunu (vamşa: soy), yani Krishna'nın yaşamını ve maceralarını anlatan bir eserdir. Vedik tanrıların destan döneminde eski ihtişamlarından yoksun olduklarını görüyoruz. Artık bir Vishnu-Şiva rekabeti başlamıştır. Zaman zaman kapışan bu tanrıları tanrı Brahma yatıştırır. Krishna, İndra'ya üstündür. Harivamşa'da onunla alay eder. Sık sık kavga ederler. Bunun nedeni şöyle açıklanabilir:</strong></p>
+        <p align="justify"><strong>Hint mitolojisinin en eski ve en büyük tanrısı İndra'dır. Yağmurlu fırtınalı gökyüzünü simgeleyen bu tanrı, aynı zamanda savaşçı Ari toplumun savaş tanrısı idi. 1028 ilahi bulunan Rigveda'nın yaklaşık 250 ilahisi ona sunulmuştur. O, başta kuraklığı simgeleyen yılan Vritra olmak üzere, birçok kötü ruh ve şeytanla çarpışır. Vritra'yı öldürdüğü zaman, onun saklı tuttuğu suları kurtarmış olur. Bazen de çalınmış olan inekler serbest kalır. Hindistan'a kuzeyden gelen beyaz tenli savaşçı bu insanlar, kendileri gibi içki içip sarhoş olan, bu sarhoşluğun coşkusuyla korkusuzca savaşlara giden bir tanrı yaratmışlardı. Ancak savaşmayı bırakıp yerleşik yaşama geçilmeye başlanmasıyla bu tanrı da önemini yitirmeye başlamıştı. Adına sunulmuş 200 ilahi bulunan Agni ve 100 ilahisi olan Soma da onunla birlikte değer kaybetmiş, tüm müttefikleri ve hemen bütün Vedik tanrılar yerlerini yeni tanrılara bırakmışlardı. Destanlardan ve Puranalar'dan önce, henüz Brahmanalar döneminde, brahmanların övülerek tanrı derecesine yükseltilmesi, bu tanrıların değer yitireceklerinin en önemli göstergesiydi. Nitekim destanlarda brahman ermişler, tanrı İndra'dan bile güçlüdürler. Onu, bir lanet okumayla etkisiz hale getirirler (Mhb. III, 122-125).</strong></p>
+        <p><strong>Mahabharata'da erdem ve adalet tannsı Dharma'nın, İndra'nın önüne çıktığını görüyoruz. Fakat genellikle ölüm tanrısı Varna'nın bir niteliği olarak görülen Dharma, bundan öteye bir yol katedemiyor. Vishnucuların büyük çabaları sonucu, Brahmanalar'da, Manu ve tanrı Brahma ile ilgili olan balık ve kaplumbağa efsaneleri Vishnu'ya mal ediliyor; yeniden doğuş inancından alınan güçle bunlanrı tanrı Vishnu'nun bedenlenmeleri (avatara) olduğu söyleniyordu. Bununla yetinilmemiş, Rigveda'da. üç adım atan cüce kadar küçük Vishnu'nun, ilkellerin kutsal saydığı yaban domuzunun, ormanlarda baltayla gezme alışkanlığında olan köylü tipinin (Baltalı rama) hep birer bedenlenme olduğu topluma empoze edilmişti. Sayıları ona kadar çıkartılan bu avataralar arasına, Ramayana'nın kahramanı olan Rama ile Mahabharata'nın kahramanlarından Krishna da dahil edilmişti. Rama'nın Ari düşünce ve kurumlarını ülkenin güneyine kadar yaymaya çalışan tarihsel bir kişilik olma olasılığı vardır. Öte yandan Krishna &quot;Kara&quot; anlamına gelen bir sözcük olup, Harivamşa'dan da anladığımız üzere, bu kişi Yamuna nehri kenarında yaşayan çoban halkın esmer derili kahramanı idi. Gerek deri rengi, gerekse Hindistan'ın yerlisi olması dolayısıyla Krishna, Ari düşünce tarzına ters geliyordu. <br />
+          <br />
+          Rigveda'da (V, 52:17) savaşçı İndra'nın, Yamuna nehri kıyısındaki, sütleri ile ünlü ineklerin sahibi olan ve kendisine karşı gelen (VIII, 85: 13-15) tanrısız kabilelerle savaştığı anlatılır. Harivamşa'da Krishna, İndra'ya tapmak isteyen çobanları bu inançtan caydırır ve tanrılarının inekler, dağlar ve ormanlar olduğunu söyler. Buna çok kızan İndra, aşağıya müthiş bir yağmur gönderir ama parmağıyla Govardhana dağını havaya kaldırıp onu çobanların ve sürülerin üzerine bir şemsiye gibi tutan Krishna, halkını bu felaketten kurtarır. Krishna ile İndra'nın başka yerlerde de (Paricataharana Adhy. 124-140) dövüştüklerini görürüz. Bu zıtlaşmalar, &quot;yeniden doğuş&quot; ve &quot;herşey tanrıdır&quot; düşünceleriyle tanışan toplumların gözünde Krishna'yı kendilerine yaklaştırmıştır. Krishna'nın halk tarafından sevildiğini gören Vishnucular da onu, tanrı Vishnu'nun bir tür görünüşü olarak tanıtmanın kendilerine yarar sağlayacağını düşünmüşlerdir. Nitekim Bhagavadgıta'da (II, 42-44) bu yeni düşünce tarzı, eski düşünceyi Krishna'nın ağzından şöyle yermektedir: &quot;Tutkuyla körleşmiş insanlar vardır, bunlar Vedalardaki bilgiyi son gerçek sanırlar ve daha ötesini göremedikleri cennet için konuşur dururlar. Bencil isteklerle doğru yoldan sapmış bu insanlar, zevk duymak, güç kazanmak ve yeniden doğmak için dua ederler. Beyinleri böyle sözlerle yıkanan zevk ve dünya düşkünü kişiler, asla Tek Olan'ı kavrayamazlar&quot;. <br />
+          <br />
+          Kökü Veda edebiyatına dayanan bir eskiliğe sahip olan Puranalar, Rigveda ve Brahmanalar'da anlatılan bazı efsaneler ve sonradan uydurulmuş yeni öykülerle çok zengin bir mitolojik malzemeye sahiptir. On sekiz Purana'nın hepsini belli bir tarihe mal etmek doğru olmaz, ancak bunların M.S. 9. yüzyıl ile 10. yüzyıl arasında derlenip toparlandıkları düşünülür. Yazılış amaçları, anlaşılması zor dinsel konuları halkın anlayacağı bir dille anlatmak isteğidir. Vedik tanrılar, epik tanrılar, ermişler, kehanetler, cennet, cehennem ve yüzlerce efsane bu kitaplarda yeralır. Yaratılış, tanrı ve ermişlerin soyları, Manu devirleri, Hindistan'ın coğrafyası, komşuları, yeraltı dünyası konuları arasında yer alır. Puranalar Hint mitolojisi için eşsiz bir hazine değerindedir.</strong></p>
+        <h1>Kim Kimdir, Ne Nedir?</h1>
+        <p><strong>AİRĀVATA: Tanrı İndra&rsquo;nın filidir. Okyanusun Çalkalanması sırasında ortaya çıkan şeylerden biridir. Ayrıca mitolojide dört yönün birini koruyan bir canlı olarak gösterilir. Bkz. Okyanusun Çalkalanması.<br />
+          <br />
+          AMARĀVATĪ: Tanrı İndra&rsquo;nın cennetindeki görkemli şehir. Meru dağında bulunduğu söylenir. Bazen Devapura (tanrıların şehri) veya Pūshabhāsā (güneş parlaklığı) gibi isimlerle anılır. Kathāsaritsāgara&rsquo;daki peri masallarında zaman zaman sözedilir.<br />
+          <br />
+          ANASŪYA: Sözcük &ldquo;iyilik, merhamet&rdquo; anlamlarına gelir. Ermiş Atri&rsquo;nin karısının adıdır. Rāmāyana Destanı&rsquo;nda Çitrakuta tepelerinde kocasıyla birlikte yaşıyor olarak gösterilir.Çok dindar ve sert bir çilecidir ve bu sayede olağanüstü güçler kazanmıştır. Sītā onu ziyaret ettiği zaman ona, her zaman güzel görünmesini sağlayan bir yağ vermiştir.<br />
+          <br />
+          ANGADA: Rāmāyana Destanı&rsquo;nda, maymun Vālī&rsquo;nin oğlu, Sugrīva&rsquo;nın yeğeni olan maymun kahraman. Savaşta Rāma&rsquo;ya çok yardımları olur. Babası öldükten sonra Sugrīva ona babalık yapar. Akıllı ve cesur bir karakterdir. <br />
+          <br />
+          CAGANNĀTHA: Cagannāth diye de söylenir ve &ldquo;Dünya Efendisi&rdquo; anlamına gelir. Vishņu veya Kŗishņa&rsquo;nın bir adıdır. Aslında, Hindistan&rsquo;ın Orissa bölgesindeki Purī kentinin ünlü Vishnu idolü ve türbesidir. Purī&rsquo;ye ait yerel bir tanrı, Hinduizmin içine girmiş ve o bölgenin koruyucusu olduğuna inanılan bu tanrı, Vishnu&rsquo;nun bir görünüşü olarak kabul edilmiştir.<br />
+          <br />
+          CĀMBAVĀN: Rāmāyana Destanı&rsquo;ndaki ayı karakter. Maymunlarla beraber hareket eder, kendisine ait ordusu vardır. Bilgeliğiyle dikkati çeker. Rāma&rsquo;nın Rāvana ile yaptığı savaşta çeşitli yararlılıklar gösterir. Savaşta ölümcül yara alanların kurtulması için nereden hangi şifalı otların getirileceğini Hanumān&rsquo;a o söyler (R VI,74).<br />
+          <br />
+          CEHENNEM: Sanskrit dilinde Naraka sözcüğüyle belirtilen cehennem, Hint hayal gücünün belirlediği ölçülerde çok çeşitlidir. Markandeya Purana&rsquo;da birçok çeşidinden söz edilir. Örneğin Maharaurava (Çok Korkunç) cehennemi, 4.725.000 km. genişliğinde, bakırdan yapılmıştır. Altında ateş yanar ve korkunç derecede sıcaktır. Günahkar kişi orada elleri ve ayakları bağlı olarak durur, ortada yuvarlanarak hareket eder. Kuşlar ve böcekler her tarafını didik didik ederler. Tamas (Karanlık) cehenneminde ise çok müthiş bir soğuk vardır. Tamamen karanlıkla kaplıdır. İnsanlar orada birbirlerine çarparlar ve birbirlerinden medet umarlar. Soğuktan dişleri takırdar, açlık ve susuzluk belasıyla uğraşırlar. Kar taneleriyle yüklü keskin rüzgarlar onların iliklerine işler. Nikrintana (Kesiliş) cehenneminde devamlı olarak dönmekte olan bir çömlekçi tekerleği vardır. İnsanlar bunun üstüne oturtulurlar ve ölüm tanrısı Yama&rsquo;nın hizmetçisinin hazırladığı telle kesilmeye başlanırlar. Ayaktan kafaya doğru kesilirler ve yaşamlarını yitirmedikleri için yüzlerce kez kesilirler. Apratishtha (Emniyet Yok) cehenneminde, bir yanda tekerlekler bir yanda kuyu ipleri ve kova vardır. Bir kısım insanlar sürekli olarak dönen tekerleklerin üstünde tutulurlar ve vücutlarından kan fışkırana dek orada döndürülürler. Bir kısım insan ise kova içinde sürekli suya sarkıtılırlar. Asipatravana (İğneyaprak Ormanı) cehennemi yaklaşık 135.000 km genişliğinde, güneş ışınlarıyla kavrulan bir yerdir. Burada bir orman vardır. Bu ormanın ağaçlarının yaprakları sivri, kılıç gibi keskindir. Bir yandan kaplan kadar korkunç kara köpeklerin havlamaları duyulur. İnsanlar o ormanın serin gölgesine ulaşmak isterler ancak ulaştıkları zaman tüm iğne yapraklar koparak insanların üzerine düşer. İnsanlar ateşle kavrulan yerlere düşerler. Köpekler koşup gelirler ve inleyip feryat eden insanların uzuvlarını kopartmaya başlarlar. Taptakumbha (Yanan Kazan) cehenneminde ise her tarafta alev alev yanan ateşle çevrili ısıtılmış kazanlar vardır. Bunların içi erimiş demirle kaplıdır ve öbek öbek ateş gruplarının üstünde durur vaziyettedir. Yama&rsquo;nın yardımcıları günahkarları baş aşağı bu kazanların içine atarlar. Yanan organlarından sızan ilikleri ve özleri, kaynayan kazana karışır ve kazanın suyunu bulandırır. Korkunç akbabalar çatlayan kafataslarının patlamış göz delikleri kısmından çekerek insanları tekrar aynı kazanın içine atarlar. O insanların kaynayan kazandaki erimiş kafaları, organları, etleri, derileri ve kemikleri yeniden birleşirler. Yama&rsquo;nın hizmetçileri, ellerinde kaşıklarla bu bereketli karışımı sürekli olarak karıştırır dururlar.. Vishnu Purana&rsquo;da (II,6) 28 tane cehennem sayılır, ancak bunların betimlemeleri yapılmaz; sadece hangi cehennemin hangi suça karşılık geleceği belirtilir.<br />
+          <br />
+          ÇANDİKĀ: Tanrıça Durgā&rsquo;nın bir adıdır. Bkz. Durgā.<br />
+          <br />
+          DAŞAMAHĀVİDYĀH Bunlar, en yüce tanrıça grubudur. Oluşumları hakkında şöyle bir olay anlatılır. Daksha&rsquo;nın kızı Sati, tanrı Şiva&rsquo;nın karısıdır. Babasının kurban törenine çağırmamasına kızan Sati, kendisini on parçaya bölerek bu tanrıçaları yaratır. Şiva, Sati&rsquo;nin öfkesinden korkar ve gitmesine izin verir. Bu durumda Sati&rsquo;nin gücü Şiva&rsquo;dan daha fazladır. Kālī ve Tārā bağımsız tanrıçalar olarak da karşımıza çıkarlar. On Mahavidya şunlardır: Kālī, Tārā, Çinnamastā, Bhuvaneşvari, Bagalā, Dhūmāvati, Kamalā, Mātangī, Şodaşī, Bhairavī.<br />
+          <br />
+          DHANVANTARİ: Okyanusun Çalkalanması ile ortaya çıkan tanrıların hekimidir. Tıp biliminin babası kabul edilip ünlü Ayurveda (Yaşam Bilgisi) ona mal edilir. Okyanusun çalkalanması sırasında içinde nektar bulunan beyaz bir kapla belirir. Ona bu yüzden Sudhāpāni (elinde nektar taşıyan) ve Amrita (ölümsüzlük) gibi isimler verilir.<br />
+          <br />
+          EKAÇAKRA: Mahābhārata Destanı&rsquo;nda, Pāndu oğullarının anneleri Kuntī ile birlikte gelip bir Brāhman&rsquo;ın evinde kaldıkları kasaba. Sözcük anlamı &ldquo;tek tekerlek&rdquo; tir. Bhīma, kasabayı haraca kesen ifrit Baka (veya Vaka) yı burada öldürür. İfrit hergün sırayla bir evden bir insanı ve çeşitli yiyecek maddelerini ormana getirmelerini istemiştir. Sıra, Pāndavaların evinde kaldıkları Brāhman&rsquo;ın ailesindedir. Ana, kız ve oğul hepsi de kendini feda etmek istemektedir. Konuşmalarını duyan Kuntī, oğlu Bhīma&rsquo;nın bu işi çözeceğini söyler. Nitekim Bhīma ormana gider, ifritle alay ettikten sonra onu öldürür ve kasabayı bir kabustan kurtarır.<br />
+          <br />
+          EKALAVYA: Mahabharata Destanı&rsquo;nın büyük savaş hocası, Kuruları ve Panduları yetiştiren Drona birgün bir Bhilla çocuk tarafından ziyaret edilir. Çocuğun adı Ekalavya&rsquo;dır ve okçu olmayı çok istemektedir. Ancak aşağı kast mensuplarına bu bilgileri vermek yasak olduğu için Drona çocuğun bu isteğini reddeder. Ekalavya ormandaki klübesinin yanına Drona&rsquo;ya tıpatıp benzeyen bir heykel yapar ve ona baka baka kendi kendine ok atma çalışmaları yapar. Zaman geçer ve günün birinde Drona, genç prenslerle birlikte ormanda dolaşırken, Ekalavya&rsquo;ya rastlar. Büyük savaş üstadı orada Bhilla çocuğun ok ve yay kullanmadaki becerisine hayran kalır. Bunları kimin öğrettiğini sorduğunda çocuk, kendi yaptığı Drona heykelini gösterir. Drona bu durumdan çok etkilenmiştir, ancak bir aşağı kast mensubu olan çocuğu bir tehlike olarak görür. Ona &ldquo;hocana hediye olarak ne sunacağını&rdquo; sorar. Çocuk ne isterse istesin vereceğini söyler. Drona da ondan sağ elinin baş parmağını ister. Ekalavya hiç tereddüt etmeden bıçağıyla baş parmağını keser ve böylece Guru&rsquo;suna olan bağlılığını kanıtlamış olur. Bu isimde bir Nishada kral da vardır. Görünmez olan bu kralı Krishna öldürmüştür.<br />
+          <br />
+          GOVARDHANA: Bugünkü Mathura (Vrindavan) da bulunan ünlü bir dağdır. Vrindavan&rsquo;a yirmibeş kilometre uzaklıktadır. Bu bölge, Krishna&rsquo;nın gençliğinin geçtiği yerdir. Efsaneye göre Krishna bu dağı tek eliyle kaldırıp, çobanların üstünde bir şemsiye gibi tutarak, onları fırtınadan korumuştur. Fırtınayı çıkartan İndra ile çoban tanrı Krishna arasındaki bu çekişme, bize farklı toplumlar arasındaki uyuşmazlığın izlerini veriyor. Bkz.Krishna.<br />
+          <br />
+          HAYAGRĪVA: Sözcük &ldquo;at boyunlu&rdquo; anlamına gelir. Bir efsaneye göre, uyumakta olan Brahmā&rsquo;nın ağzından kaçan bir Daitya, Veda&rsquo;yı çalar ve Vishnu&rsquo;nun Balık bedenlenmesi tarafından öldürülür. Başka bir efsaneye göre ise, iki Daitya tarafından kaçırılan Veda&rsquo;yı kurtarmak için tanrı Vishnu kendisi bu kılığa girer.<br />
+          <br />
+          KADRU: Çok sert ve uzun çileler doldurmuş bir ermiştir. Tanrı İndra onun güç kazanmasından korkmuş ve onu güçten düşürmek için gökten Pramloçā isimli periyi göndermiştir. Ermiş onunla, kendisine bir gün gibi gelen yüzlerce yıl geçirmiş fakat sonunda onu reddederek Vishnu&rsquo;nun ülkesine çekilmiştir. Pramloçā daha sonra kızı Mārishā&rsquo;yı doğurmuştur.<br />
+          <br />
+          KĀLİYANĀGA: Beş başlı bir yılan. Yamuna nehrinde yaşadığı ve orayı zehiriyle kirlettiği söylenir. Krishna nehre dalıp onunla boğuşur, onun tepesinde dans eder ve sonra onu okyanusa sürgün eder. Böylece hem sığırları hem de insanları bu dertten kurtarır.<br />
+          <br />
+          KUŞA-LAVA: Kuşulava diye de söylenir. Bu iki ismi dual formda söylemek istersek o zaman da Lava&rsquo;yı öne alıp &ldquo;Lavakuşau&rdquo; biçiminde söylememiz gerekir. Bunlar Rāmāyana Destanı kahramanı Rāma&rsquo;nın çocuklarıdır. Ermiş Valmīki&rsquo;nin çile yerinde büyümüş ve Rāmāyana&rsquo;yı onun yanında ezberlemişlerdir. Bkz.Rāmāyana.<br />
+          <br />
+          LAVAKUŞAU: Rāma&rsquo;nın oğulları. Bkz. Kuşalava.<br />
+          <br />
+          MAHĀKĀLA: Sözcük &ldquo;büyük zaman&rdquo; anlamına gelir ve özellikle tanrı Şiva&rsquo;nın korkunç biçimini niteler. Zaman herşeyi alıp götürdüğü için yok edici tanrıya böyle bir isim verilmiş. Karısı Kālī de &ldquo;Mahākālī&rdquo; olarak gözükür. Bkz.Şiva, Kālī.<br />
+          <br />
+          MAHİSHĀSURA: Asura-mahisha da denir. Asura &ldquo;kötü ruh&rdquo;, Mahisha &ldquo;manda&rdquo; demektir ve ikisi birlikte &ldquo;manda biçimli kötü ruh&rdquo; anlamına gelir. Hindu mitolojisinde tanrıça Durga ile yaptığı savaşla bilinir. Aslana binen Durgā, uzun bir savaştan sonra, mandanın boynunu keser ve içinden çıkan ifriti öldürür. Tanrıça, narin ayağıyla mandanın güçlü bedenini ezer. Bu olaydan dolayı Durgā&rsquo;ya &ldquo;Mahishamardini&rdquo; (Mahisha&rsquo;yı Öldüren) adı verilir. Bu mitin ortaya çıkmasına, olasılıkla, doğu Hindistan&rsquo;ın pirinç çeltiklerinde kullanılan mandanın neden olduğu düşünülür. Batının buğday, arpa ve üzüm yetiştiren halkı boğayı kullanmakta ve iki kültür arasında bir çatışma yaşanmaktadır. Efsane bunu yansıtıyor olsa gerek. Mandayı öldüren Durgā, tanrı Şiva&rsquo;nın karısı veya onun dişil enerjisi (şakti) olarak görülür. Durgā Veda tanrılarının (Agni, Vishnu, Varuna, Yama, İndra) silahlarını kullansa da ifrite karşı bunlar bir işe yaramazlar ve sonra ifriti kendi öz gücüyle öldürür (Vamāna Purāna, XXI, 43-46). Buradan Ana Tanrıça inancının ululandığını, eski tanrıların değer yitirdiğini anlamaktayız. Ayrıca aslan ve manda da doğanın birbirine düşman iki canlısıdır ve bu mitte bu da vurgulanmış oluyor.<br />
+          <br />
+          MAYMUNLARIN YARATILIŞI: Rāmāyana Destanı&rsquo;na göre tanrı Brahmā bütün tanrılara, tanrı Vishnu&rsquo;ya yardımcı olmaları için, kendileri gibi güçlü yaratıklar doğurtmalarını buyurdu. Bunun için göksel periler olan Apsarāslar, Gandharva kadınları, genç Yakshalar, dişi Nāgalar, Vidyādhara kadınları, Kinnara kızları, dişi ayılar ve dişi maymunlar kullanılabilirdi. Brahma örnek olarak, esnerken ağzından yarattığı ayı Cāmbavān&rsquo;ı gösterdi. Tanrılar hemen söylenileni yaptılar ve maymun oğullarını yarattılar. İndra Vālī&rsquo;yi, Güneş Tanrısı Sugrīva&rsquo;yı, Brihaspati bütün maymunların en akıllısı olan Tārā&rsquo;yı, Kubera Gandhamādana&rsquo;yı, Vişvakarma güçlü maymun Nala&rsquo;yı, ateş tanrısı Agni Nīla&rsquo;yı, Aşvin Çifti Mainda ve Dvivida&rsquo;yı, su tanrısı Varuna maymun Sushena&rsquo;yı, Parcanya Sarabha&rsquo;yı yarattı. Rüzgar Tanrısı Marut, akıllı, güçlü ve havada hızla uçabilen ünlü Hanumān&rsquo;ı yarattı. Soylu ermişler, Siddhalar, göksel Vidyādharalar ile Nāgalar ve göksel şairler olan Çāranalar da maymunlarınkine benzer kahramanlar yarattılar. Böylece Rāvana ile çarpışacak binlerce yiğit asker oluştu. Maymunların bir kısmı, iki kardeş olan Vālī ile Sugrīva&rsquo;nın çevresinde toplandı. Bir kısmı da Nala, Nīla, Hanumān ve diğer maymun liderlerinin etrafında toplandı. Yeryüzünün heryerini, dağları, ormanları ve denizleri bu maymun sürüleri kapladı. Hepsinin de amacı Rāma&rsquo;ya yardım etmekti (R I, 17).<br />
+          <br />
+          MOHİNĪ: Büyüleyici güzellikteki göksel peri. Okyanusun Çalkalanması sırasında ortaya çıkan nektarı ifritlerin elinden almak için tanrı Vishnu&rsquo;nun girdiği olağanüstü güzellikteki kadın. İfritler onun büyüsüne kapılıp şaşırarak ellerindeki nektarı ona vermişlerdi.<br />
+          <br />
+          NAVADURGĀH) Tanrıça Durgā&rsquo;ya ait olduğu düşünülen dokuz tanrıça biçimi. Bunlar Şailputrī, Brahmaçarinī, Çandraghantā, Kushmandā, Skandamatā, Katyayanī, Kalaratrī, Mahagaurī, Siddhadhatrī&rsquo;dir. Hindular Ekim ayında kutlanan ve dokuz gün süren Navaratri bayramında, sırayla her gün birine olmak üzere, bu tanrıçalara taparlar.<br />
+          <br />
+          OKYANUSUN ÇALKALANMASI: Tanrılar ölümsüzlük içkisine (amrita) sahip olmak için kafa kafaya verip düşünürler. Sonunda okyanusu çalkalamaya karar verirler; çünkü bu sayede amrita ortaya çıkacaktır. Su içkiden pay isteyince Mandara dağını yüce bir kaplumbağanın üzerine oturturlar. Bu çalkama çubuğu olacaktır. Bunun çevresine yılan Vāsuki&rsquo;yi dolarlar, sonra tanrılar ve ifritler çalkama ipi olan yılanı zıt uçlardan tutarak çalkalamaya başlarlar. Vishnu yorulan tanrılara ve ifritlere kuvvet bağışlar ve çalkalama sürerken okyanustan ay ve güneş çıkarlar. Daha sonra beyazlar içinde tanrıça Şrī görünür. Sonra beyaz at Uççaihşravas, Kaustubha mücevheri, ulu fil Airāvata ortaya çıkarlar. Ancak şiddetle çalkalanan okyanustan Kālakūta denilen zehir çıkar ve tüm evreni sarar. Tanrı Şiva gelir ve bu zehiri içip boğazında tutarak tüm dünyaları bir yok oluştan kurtarır. Şiva&rsquo;nın boğazındaki zehir mavi renkli olduğu için bu tanrıya &ldquo;mavi boğazlı&rdquo; anlamında Nīlakāntha denir. Tanrıların ölümsüzlüğe götüren yolundan büyülü ağaç ve büyülü inek doğar. Sonra, elinde içi nektarla dolu beyaz bir kap tutan, tanrıların hekimi Dhanvantari meydana gelir. İfritler bu mucizeyi görünce hepsi de &ldquo;o benimdir&rdquo; diye bağırarak ona sahip olmaya çalıştılar. Tanrı Nārāyana, olağanüstü güzel bir kadın olan Mohinī kılığına girerek ifritleri şaşırtır ve ölümsüzlük içkisine sahip olmalarına engel olur. İçkiden tanrılara verir fakat onlara vermez. Bunun üzerine ifritler savaş çıkartırlar. Nara-Nārāyana birlikte onlara karşı savaşır. İçkiden, tanrı biçimine giren bir ifrit olan Rāhu da içer, ancak bunu fark eden Vishnu diskiyle onun başını uçurur. İfritlerle tanrılar arasında korkunç bir savaş cereyan eder. Bu savaşı tanrılar kazanır. Herşey bittikten sonra Mandara dağını yerine koyarlar. İndra, ölümsüzlük içkisini saklaması için onu Vishnu&rsquo;ya verir. (Mhb.I,15; 5-13/ I,16; 1-40/I,17; 1-30). Bu efsanenin Rāmāyana (I,45) anlatımı ise, kısaca, şöyledir: &ldquo;Satyayuga devrinde, Diti&rsquo;nin güçlü çocukları (ifritler) ve Aditi&rsquo;nin kutlu çocukları (tanrılar) büyüdüğünde, yaşlılık ve ölümden nasıl kurtulabiliriz diye düşündüler. Çareyi, okyanusun çalkalanmasından doğacak sütü içmekte buldular. Okyanusu çalkalamak için yılanlar kralı Vāsuki&rsquo;yi ip olarak, Mandara dağını da değnek olarak kullandılar. Böylece hem tanrılar hem de ifritler çalkalamaya başladılar. Bin yıl geçtikten sonra yılanın birden çok başı, bir bir kayaları ısırıp zehir akıtmaya başladı. Çalkalanmanın da etkisiyle Hālāhala denilen zehir okyanusun yüzeyinde birikti. Bütün dünya, tanrılar, ifritler ve insanlar zehirlenmeye başladılar. Hemen tanrı Şiva&rsquo;ya başvurup yalvardılar. Yüce Şiva-Rudra geldi ve zehiri sanki abıhayat içer gibi içti ve Hālāhala zehirini boğazında tuttu. Tanrılar ve ifritler tekrar okyanusu çalkalamak istediler. Bu defa Mandara dağı, yer altındaki Patala&rsquo;ya inerek kayboldu. Vishnu&rsquo;dan onu çıkarmasını rica ettiler. Vishnu da kaplumbağa biçimine girerek okyanusun dibinden dağı yüzeye çıkarttı. Bin yıl sonra Dhanvantari adında bir adam ortaya çıktı. Bu Ayurveda bilen, dindar bir kişiydi. Sonra müthiş güzellikte göksel periler oluştu. Okyanusun yüzeyindeki kremadan oluşan bu güzellere Apsarālar denildi. Onları ne tanrılar ne de ifritler eş olarak kabul etmeyince ortalık malı oldular. Gene okyanus çalkalanmasından Vārunī denilen içki oluştu. Bu, tanrı Varuna&rsquo;nın kızı idi ve bir tür şarap (sura) idi. Onu şeytanlar eş olarak almadıkları için onlara Asuralar denildi. Tanrılar ise Vārunī&rsquo;yi eşliğe kebul ettikleri için Suralar oldular. Atların kralı Uççaihşrava, Kaustubha denilen mücevher ve nihayet beklenen abıhayat suyu ortaya çıktı. Tanrılarla ifritler bunun için kavga etmeye başladılar. Asuralar tüm cadıları etraflarında topladı. Ölümcül bir savaş oldu, gök ve yer sarsıldı. Vishnu büyüleyici bir kız kılığına girerek abıhayatı başka bir yere kaçırdı. Tanrı Vishnu&rsquo;ya karşı gelenler ona saldırınca müthiş bir savaş oldu ve Diti oğlu olan Asuralar ortadan kaldırıldı. Savaş kazanıldıktan sonra İndra, üç dünyayı da mutlulukla yönetti.&rdquo;<br />
+          <br />
+          RAMBHĀ: Okyanusun çalkalanması sırasında ortaya çıkan olağanüstü güzellikteki kadın. Bu Apsaras&rsquo;ı tanrı İndra ermiş Vişvāmitra&rsquo;yı baştan çıkartması için göndermiş, ancak ermişin lanetiyle peri kızı bir taş haline gelmişti. Rāmāyana Destanı&rsquo;nda Kubera&rsquo;nın oğlu Nalakubera&rsquo;nın karısıdır, ancak Rāvana onu çok beğenir ve tüm itirazlarına rağmen onu kaçırır. Bkz. Okyanusun Çalkalanması.<br />
+          <br />
+          RATİ: &ldquo;Zevk&rdquo; anlamına gelir. Aşk Tanrısı Kāmadeva&rsquo;nın iki karısından biridir. Diğerinin adı ise Prīti&rsquo;dir. Tanrıça Çinnamastā, yerde aşk yapmakta olan Aşk Tanrısı Kāma ile karısı Rati&rsquo;nin üzerinde duruyor olarak gösterilir.<br />
+          SAMPĀTİ: Rāmāyana Destanı&rsquo;ndaki akbaba karakterlerden birisi, akbaba Catāyus&rsquo;un kardeşidir. Vishnu&rsquo;nun binek kuşu Garuda&rsquo;nın oğlu olup, destanda Rāma&rsquo;ya, Sītā&rsquo;nın kaçırıldığı yönü göstermesiyle yardımcı olur. Kanatları, kardeşiyle birlikte yarışırlarken, güneşe fazla yaklaştığı için yanmış ve kanatsız kalmıştır. Ancak maymunlarla karşılaşıp onlara Sītā&rsquo;nın Lankā adasına kaçırıldığını söylediğinde yeniden kanatları çıkar ve eski haline gelir (R IV,61-63). Bir başka söylencede Aruna ve Şyenī&rsquo;nın oğludur.<br />
+          <br />
+          SAPTAMĀTRİKĀH Bunlar, Brahman geleneğinden gelmeyen, halkın inançlarından türemiş tanrıçalardır. En önemli özellikleri, hiddetli olmalarıdır. Hastalık verir veya hastalığı giderir, çocukları korur veya onlara illet bulaştırırlar. Savaşlarda kurbanlarının kanlarını içerler. Ellerinde ve yüzlerinde çok belirleyici simgeler olmadığından onları binek hayvanlarından tanırız. Yedi Ana şunlardır: Brahmanī, Maheşvarī, Kaumarī, Vaishnavī, Vārāhī, İndranī, Çāmunda.<br />
+          <br />
+          TĪRTHANKARALAR: Tīrthamkara da denir. Bunlar Caynist edebiyatta yer alan yirmidört ermiştir. Bu Caynist ermişlerin ilki Ŗishabha, sonuncusu da, Caynizm&rsquo;in kurucusu Mahavira&rsquo;dır. Tīrthankara &ldquo;yolu hazırlayan&rdquo; anlamına gelir. Bunlar mükemmel bilgi (kevalacnāna) sahibi insanlardır ve din kötülüğe batacağı zaman ortaya çıkıp onu kurtarırlar. <br />
+          <br />
+          TRİŞULA: Tanrı Şiva&rsquo;nın üç uçlu mızrağıdır. Bununla evreni ve tüm canlıları koruduğu düşünülür. Haftanın belirli günlerine göre dönüşü anlam kazanır. Örneğin Pazar ve Cuma günleri batıya, Salı ve Çarşambaları kuzeye, Cumartesi ve Pazartesi günleri doğuya, Perşembeleri de güneye çevrilmesinin uğursuzluk getireceğine inanılır. Hindistan&rsquo;da birçok eşya ve aracın üzerinde bulunur.<br />
+          <br />
+          VĀSUKİ: Üç büyük yılan kraldan biri (diğer ikisi Şesha ve Takshaka&rsquo;dır). Tanrılar ve ifritler Okyanusu çalkalarken Vāsuki&rsquo;yi Mandara dağının etrafına dolayıp çalkalama ipi olarak kullanmışlardı. Kimi araştırmacılar bu yılandan ipin dünyanın eğik eksenini sembolize ettiğini, tanrılarla ifritlerin farklı kutupları, çalkalanma hareketinin de dünyanın yalpalanma hareketini temsil ettiğini öne sürerek, ciddi astronomik hesaplamalara girişmektedirler.<br />
+          <br />
+          VİKRAMĀDİTYA: İsmi &ldquo;kahramanlık güneşi&rdquo; anlamına gelir. Uccain&rsquo;de yaşadığı düşünülen yarı efsanevi bir kraldır. Dönemi, M.S.l.yüzyıl (M.S.56&rsquo;dan itibaren) olarak tahmin edilir. Yüz yıl hüküm sürmüş kabul edilir ve birçok maceraya atıldığı varsayılır. Vetalapançavimşati öykü serisindeki baş karakter kral Vikramāditya&rsquo;dır. Burada ona Trivikramasena diye seslenilir. Efsaneye göre birden fazla Vikrama bulunduğu için, bu ismin &ldquo;Vikrama&rsquo;nın Üçüncü Bedenlenmiş Hali&rdquo; anlamında kullanılmış olması gerekir. Bu krala kısaca &ldquo;Vikrama&rdquo; (Kahraman) diye de hitap edilir.</strong><br />
+      </p>
+<blockquote>
+  <div class="tanrılarbilgi">
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <p><strong>Hint mitolojisi</strong></p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+      </blockquote>
+      </blockquote>
+    <p><strong>Kaynaklar</strong>: <a href="vedalar.html" target="_blank">Vedalar</a>( <a href="rigveda.html" target="_blank">Rigveda</a> <a href="samaveda.html" target="_blank">Samaveda</a> <a href="yajurveda.html" target="_blank">Yajurveda</a> <a href="atharvaveda.html" target="_blank">Atharvaveda</a>)  <a href="Upanisad.html" target="_blank">Upanişadlar</a> Puranalar</p>
+    <p><strong>Destanlar</strong>: <a href="ramayana.html" title="Ramayana" target="_blank">Ramayana </a><a href="mahabharata.html" title="Mahabharata" target="_blank"> Mahabharata </a><a href="bhagavat.html" target="_blank">Bhagavat Gita</a></p>
+    <p><strong>Tanrılar</strong> :<a href="trimurti.html" title="Trimurti" target="_blank">Trimurti</a> (<a href="brahma.html" target="_blank">Brahma</a> <a href="visnu.html" target="_blank">Vişnu</a> <a href="siva.html" target="_blank">Şiva</a>) <a href="ganesa.html" target="_blank">Ganeşa</a> <a href="Indra.html" target="_blank">Indra</a> <a href="surya.html" target="_blank">Surya</a></p>
+    <p><strong>Tanrıçalar</strong> :Tridevi (Saraswati Lakşmi Parvati ) <a href="durga.html" title="Durga" target="_blank">Durga</a> <a href="kali.html" title="Kali" target="_blank">Kali</a> <a href="varahi.html" title="Varahi" target="_blank">Varahi</a></p>
+    <p><strong>Binekler</strong> :<a href="garuda.html" title="Garuda" target="_blank">Garuda</a>  <a href="nandi.html" title="Nandi" target="_blank">Nandi</a> Hamsa</p>
+    <p><strong>Destanlardaki karakterler</strong>: <a href="krisna.html" title="Krişna" target="_blank">Krişna</a> <a href="rama.html" title="Rama (avatar)" target="_blank">Rama</a> <a href="sita.html" title="Sita" target="_blank">Sita</a> <a href="laksman.html" title="Lakşman" target="_blank">Lakşman</a>  <a href="hanuman.html" title="Hanuman" target="_blank">Hanuman</a> <a href="kaliye.html" title="Kaliya" target="_blank">Kaliya</a>  <a href="varaha.html" title="Varaha" target="_blank">Varaha</a> <a href="arjuna.html" title="Arjuna" target="_blank">Arjuna</a> <a href="bisma.html" title="Bişma" target="_blank">Bişma</a></p>
+    <p><strong>İnsan olmayan ırklar</strong>: <a href="naga.html" title="Nāga" target="_blank">Nāga</a> <a href="rahu.html" title="Rahu" target="_blank">Rahu</a> <a href="apsara.html" title="Apsara" target="_blank">Apsara</a> <a href="yaksa.html" title="Yakşa" target="_blank">Yakşa</a> Vanara</p>
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</blockquote></blockquote><strong>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="hovergallery1"><img src="images/images (2).jpg" width="235" height="191" /></div><p>
+
+<div class="hovergallery1"><img src="images/1.jpg" width="225" height="236" /></div><p>
+
+<div class="hovergallery1"><img src="images/11111.jpg" width="230" height="183" /></div><p>
+<div class="hovergallery1"><img src="images/111111111).jpg" width="225" height="249" /></div><p>
+
+
+
+
+
+</div>
+</body>

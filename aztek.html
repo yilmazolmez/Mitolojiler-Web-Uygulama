@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading"><span dir="auto">Aztek dini</span></h1>
+        <div class="hovergallery1">          
+          <p><img src="images/250px-Aztec_Sun_Stone_Replica_cropped.jpg" width="200" height="200" align="left" />        </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p><strong>AZTEK TAKVİMİ</strong></p>
+          <p>onalpohualli denen 260 günlük dinsel yıl ile 365 günlük güneş yılını birleştiren takvim sistemi. Örnek aldığı Maya takvimi gibi, Aztek takvimi de 20'şer günlük 13 döneme bölünen dinsel yıl ile 20'şer günlük 18 aya bölünen ve ayrıca uğursuz sayılan beş günlük bir dönemi (nemontemi) içeren toplumsal yıldan oluşuyordu. Gene Maya takviminde olduğu gibi, dinsel ve toplumsal Aztek yılları her 52 yılda bir, birbirlerine göre aynı konuma gelirdi.</p>
+          <blockquote>
+            <blockquote>
+              <p>&nbsp;</p>
+            </blockquote>
+          </blockquote>
+        </div>
+        <p><strong>Aztek mitolojisi veya Aztek dini, Meksika/Aztek uygarlığı tarafından Meksika Vadisi&rsquo;nde 14. ve 16. yüzyıllar arasında geliştirilmiş bir dini inanç, mitoloji ve geleneksel bütündür.
+          Politeistik yapıya sahip bu inanış, gerek kendisinden eski gerekse kendisiyle eş zamanlı olarak aynı coğrafi bölgede ortaya çıkmış inançlar, mitler, kültürel ve kozmik imgelerden yoğun oranda etkilenmiştir. Ayrıca Aztek dini çok önemli ve sıkı bir mistik karaktere sahiptir ve liturjik açından çok gelişmiştir. Seremoniler ve ritüeller büyük bir titizlikle, belirli takvimleri çok sıkı bir şekilde takip ederek gerçekleştirilir ve dinî olduğu kadar siyasî ve toplumsal açıdan da önem arz ederdi. Ayrıca uzun yıllar boyunca kurgu eserlerinde yer almış antik ritüellerde insan kurban edilmesi anlayışı da Aztek inancında yer etmiş, ritüellerde gerçekten insan kurban edilmiştir.</strong></p>
+
+  <h1><span id="Tarih_ve_yarat.C4.B1l.C4.B1.C5.9F">Tarih ve yaratılış</span></h1>
+  </blockquote>
+<ul>
+  <li><strong>Paylaştıkları ortak dil sebebiyle Aztek kültürü genellikle Nahua olarak bilinen kültürel kompleks ile gruplandırılmıştır. Efsaneye göre, Texcoco Gölü civarındaki Anahuac vadisine, daha sonra Aztekleri oluşturacak olan çeşitli gruplar, kuzeyden gelmişlerdir. Vadinin yeri ve gölün mesafesi belirli olsa da, Azteklerin kökenine dair kesin pek bir şey bilinmemektedir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Kökenlerine dair farklı kaynaklar ve düşünceler mevcuttur. Efsaneye göre Meksika/Aztek halkının ataları kuzeyde Aztlán olarak anılan bir yerden gelmiş, yedi nahuatlacalardan sonuncusu güneye doğru yolculuğu yapmış ve &ldquo;Azteka&rdquo; ismini almıştır. Diğer kaynaklar halkın kökenini Chicomostoc&rsquo;a (&ldquo;yedi mağranın yeri&rdquo;) veya Tamonachan&rsquo;a (tüm uygarlıkların efsanevi kökeni, çıkış yeri) dayandırırlar.</strong></li>
+</ul>
+<ul>
+  <li><strong>Meksika/Azteklerin tanrıları Huitzilopochtli tarafından yönlendirildiği söylenirdi. Göldeki bir adaya vardıklarına bir meyve dolu bir nopak kaktüsüne konmuş bir kartal görürler. Bu görüntü onlara tam o noktada yeni evlerini kurmalarını öğütleyen bir kehaneti tamamlamaktaydı. Böylece AzteklerTenochtitlan şehrini bu mevkiye kurmuş, bugünkü Mexico City&rsquo;nin merkezinde bulunan, harika bir suni ada inşa etmiştirler.</strong></li>
+</ul>
+<ul>
+  <li><strong>Efsaneye göre, Meksikalılar Texcoco civarındaki Anahuac vadisine vardıklarında, diğer tüm halkların en az uygar olanı olarak görülmekteydiler; fakat Meksika/Aztek halkı öğrenmeyi tercih etti ve diğer halklardan, özellikle de antik Toltek&rsquo;ten (ki Toltec uygarlığını bir parça daha eski bir uygarlık olan Teotihuacan ile karıştırmaktaydılar), alabildikleri kadar bilgi, gelenek ve kültürel öğe aldılar. Azteklere göre Toltec halkı tüm kültürün yaratıcısı olan halktı; &ldquo;Toltecayotl&rdquo; kültür sözcüğüyle eş anlamlıydı.</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztekler birkaç farklı geleneği benimsedikleri ve kendi daha eski gelenekleriyle birleştirdikleri için, birkaç tane yaratılış efsanesine sahiptiler. Bunlardan bir tanesi bugünkü dünyadan önce yaşanmış ve hepsi felaketle sonlanmış dört çağ olduğunu belirtir. Buna göre bugün yaşadığımız çağ, Nahui-Ollin, beşinci çağ veya beşinci yaratılış yıkımdan güneşe dönüşmüş olan bir tanrının kurbanı ile kurtulmuştur. Bu efsane (mit) antik Teotihuacan şehri ile ilgilidir ki şehir Aztekler oraya vardığında zaten terk edilmiş ve yıkılmıştı. Bir başka mit dünyayı,Ometeotl&rsquo;un çocukları ikiz tanrılar Tezcatlipoca ve Quetzalcoatl&rsquo;ın yarattığını tarif eder. Tezcatlipoca dünyayı yaratırken ayağını kaybetmiştir ve bu sebeple bu tanrıların tüm betimlemelerinde o bir ayağı eksik ve kemiği ortaya çıkmış bir biçimde betimlenmiştir. Quetzalcoatl&rsquo;a &ldquo;Beyaz Tezcatlipoca&rdquo; da denir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Yaratılış ve evren modeli Aztek panteonu için büyük bir önem taşır; tanrıların (veya ilahi varlıkların) diziliği bu evren modeline göredir. Panteondaki bu ilahi varlıklar 13 kattan oluşan gök kubbede ve 9 kattan oluşan yer altı dünyasında (ahiret alemi) farklı yerlerde ortaya çıkar.</strong></li>
+  <li><strong><br />
+    Aztek mitolojisi, gerek arkeolojik bulgular gerekse yazılı belgelere göre, çok kalabalık bir panteona sahipti. Varlığın fark edilebilir her yüzünün ayrı bir kutsiyeti ve doğal olarak kutsal varlığı mevcuttu. Her ne kadar İspanyollar Azteklerin &ldquo;teotl&rdquo; olarak andıkları bu güç veya varlıkları sıklıkla &ldquo;tanrı&rdquo;, &ldquo;aziz&rdquo; veya &ldquo;cin&rdquo; diye çevirmiş olsa da bu tip tanımlamalar pek doğru değildir zira Aztek mitolojisinde bu terminolojinin vurguladığı çeşitli hiyerarşik veya teolojik anlamların karşılığı yoktu. &ldquo;Teotl&rdquo; kutsal bir güçtü ve doğa olaylarında ve formlarında örneğin bir bitki veya yağmurda ortaya çıkabileceği gibi, -çoğunlukla mistik- belirli yerlerde (yani mekânlarda) ve diğer birçok mitolojide olduğu gibi fark yaratmış bireylerde de ortaya çıkabiliyordu. Bununla birlikte Aztek mitolojisinde de temeli yaratılış efsanesine dayanan daha temel bir &lsquo;tanrılar&rsquo; dizisine rastlamak mümkündür denilebilir. İnanılan evren modeliyle sıkı sıkıya ilişkili olan bu dizilimde, kavramların farkl temsil eden tanrılar evrenin de farklı noktalarında bulunur.</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztek inanışında tanrılar insanlar tarafından gözle görülemezdi. Bununla birlikte Aztekler rüyalarında ve kehanetlerde tanrıları görebilirdi. Bunun ı yönlerinidışında teixiptla olarak adlandırılan ve tanrıları temsilen kutlamalarda veya ritüellerde ortaya çıkan, tanrıları taklit eden, tanrıların içlerinde vücut bulduğu şeyler vardı – bunlar da Azteklerin tanrıları &lsquo;görmesini&rsquo; sağlıyordu. <em>Teixiptla</em>, tanrıya veya olaya göre değişebilir, bir insan veya şekil verilmiş tahta veya taş oymalarda olabilirdi. Aztekler tanrılarını yoğun biçimde betimlemiştirler. Betimlemeler antromorfiktir; bir hayvan veya bir nesnenin formunu aldığında - örneğin kutsal köpek  veya bıçak tanrı Itztli - dahi tanrının çeşitli insani özellikleri bulunur, kollar, bacaklar veya yüz gibi.</strong></li>
+</ul>
+<ul>
+  <li><strong>Azteklerin baş tanrısı ve inandıkları en yüce tanrı Ometeotl idi. Her şeye kadir, her yerde var olan, evrenin yaratıcısı bu tanrı her şeyin ilk sebebiydi. Kendinde hem eril hem de dişil özellikler barındırmaktaydı ki onun bu tarafları birçok küçük tanrıyla birleşmiştir. Eril yön ateş ve güneş ile ilişkiliyken dişil yön bereket ve arz ile ilişkiliydi. Diğer birçok mitolojide de görülen, doğrudan eylemsiz fakat varlık açısından yüce baş tanrı kavramı, Aztek mitolojisindeki Ometeotl&rsquo;da da kısmen görülebilir. Örneğin evrenin yaratılışının büyük kısmını çocukları gerçekleştirmiştir. Ometeotl Aztek panteonunda, cennetin 13. ve en yüksek katında yer alırdı. Ayrıca onun bu makamı bebeklerin ruhlarının dünyaya doğmak için indikleri yerdi.</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztek panteonundaki bir sonraki önemli tanrı olarak Tezcatlipoca zikredilebilir zira Azteklere göre ana yaratıcı güçtür. Baş büyücü olarak kabul edilen Tezcatlipoca birçok tanrıyla birlikte tanımlanmıştır; örneğin takvim ve bıçak tanrı Itztli ile.</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztek panteonundaki bir diğer yaratıcı tanrı da antik ateş tanrısı ola Xiuhtecuhtli&rsquo;dir. Xiuhtecuhtli Yeni Ateş seremonisindeki yaratıcı ve yeniden doğan tanrıdır ki bu ona, gerek dinî gerek toplumsal açıdan önem katar. Her 52 yılda bir, takvimin son buluşuyla yapılan bu seremonide bir esirin kalbi kurban edilir ve esirin göğsüne yakılan ateşle Xiuhtecuhtli tekrar doğardı.</strong></li>
+</ul>
+<ul>
+  <li><strong>Başka bir önemli tanrı ise, Aztek panteonunun antik tanrılarından olan, bereket vurgusunu da kavramsal olarak içeren yağmur tanrısı Tlaloc&rsquo;dur. Aztek uygarlığında tarımın çok önemli olması sebebiyle, Tlaloc toprağa bereket getiren tanrı olarak çok önemliydi. Nitekim Tlaloc&rsquo;un türbesi (kutsal saklama yeri, <em>shrine</em>) Templo Mayor&rsquo;da Huitzilopochtli&rsquo;ninkiyle birlikte bulunurdu. Diğer Aztek tanrılarında olduğu gibi Tlaloc da başka tanrılarla yakından ilişkilidir; bunlar rüzgâr tanrı Ehécatl, su tanrıçası Chalchiuhtlicue&rsquo;dur. Ehécatl, tanrı Quetzalcoatl&rsquo;ın suretlerindendir</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztek mitolojisinde ana tanrıçalar ve bereket tanrıçaları da bulunmaktaydı. Panteondaki en güçlü tanrıçalar teteoinnan olarak anılan ana tanrıçalardı. Cinsel güçler ve tutkularla ilgili Tlazolteotl ile aşk ve cinsel arzunun tanrıçası Xochiquetzalbunlardandır. Bunların dışında önemli bereket tanrıçalarından bazıları; Xilonen, Centeotle ve Mayahuel&rsquo;dir.</strong></li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+  <h1><span id="Seremoni">Seremoni</span></h1>
+</blockquote>
+<ul>
+  <li><strong>Aztek mitolojisi seremonileri açısından çok çarpıcıdır. Seremoniler çok sıkı bir göksel takvim baz alınarak yapılırdı ve dinî olduğu kadar sosyal öneme sahipti. Tüm seremoniler iki ritüel takvime göre yapılırdı; <em>tonalpohualli</em> (365 günlük takvim) ve 260 günlük bir başka takvim. Yörelere göre çeşitlilik gösteren seremoniler genelde üç devreye sahipti: hazırlık, kurban ve tanrıların beslenmesi. Hazırlık günlerinde oruç, çeşitli saflaştırma uygulamaları, şarkılar ve benzeri diğer kültürlerde de görülen dinî ve kutlamaya dayalı uygulamalar yer alırdı. Hazırlık devresini kurban devresi takip ederdi. Bu devrede kurban edilen insanlar genellikle ya esir ya kölelerdi. Seremoniden seremoniye kurban etme şekli değişiklik gösterebilirdi, nitekim Aztek seremonilerinde yakma, baş kesme gibi farklı kurban etme şekillerine rastlanır. Genellikle kurbanın kalbi çıkarılır ve tanrılara, beslenmeleri için, sunulurdu. Aztek inancında önemli bir yere sahip olan bu insan kurban etme imgesi, gerek edebi gerekse görsel kurgu eserlerinde fazlasıyla kullanılmıştır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Aztek mitolojisi çok sıkı ve gelişmiş bir kozmogoniye dayanmaktaydı, evrenin dengesini korumaları gerekiyordu. İnsan kurban edilmesi sık sık evrenin dengesini korumak adına, Güneş&rsquo;i veya bir başka tanrıyı yenilemek veya güçlendirmek amacıyla yapılırdı. İnsan kurban edilmesi Aztek mitolojisinde seremonilerde yer almasının yanı sıra efsanelerin ve genel inancından da önemli bir noktasını oluşturmaktaydı. Beşinci çağın yaratılmasında, Güneş&rsquo;i desteklemek için büyük sayılarda insan kurban edilmesinin yanı sıra, tanrılar da kendilerini kurban etmişlerdi. Bu tip efsanevi temellerle insan kurban edilmesi, zaman zaman büyük sayılarda, devam etmiştir.</strong></li>
+</ul>
+<blockquote>
+  <div class="hovergallery1">
+    <p><img src="images/250px-Codex_Magliabechiano_(141_cropped).jpg" width="245" height="245" align="left" /> </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><strong>insan kurban edilişini gösteren bir betimleme,Mendoza Kodeks'inden.</strong></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+</blockquote>
+<strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+   
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="hovergallery1"><img src="images/200px-Tlaloc,_Codex_Rios,_p.20r.JPG" width="200" height="233" /></div><p>
+
+
+
+
+
+</div>
+</body>

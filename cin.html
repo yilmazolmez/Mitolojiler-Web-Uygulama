@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading"><span dir="auto">Çin mitolojisi</span></h1>
+      </blockquote>
+<ul>
+  <li><strong>Çin mitolojisi, Çin halk ve kültürünün biriktirdiği mitolojik ve efsanevi söylence, inanç ve tarih anlayışın bütününü tanımlar. Oxford'un Asya Mitolojisi Sözlüğü (<em>A Dictionary of Asian Mythology</em>) Çin mitolojisini tanımlarken şu ifadeye yer verir:</strong>
+    <blockquote>
+      <blockquote>
+        <p><strong>Çin mitolojisi, ..., tarih, efsane ve mitin bir karışımıdır.</strong></p>
+      </blockquote>
+    </blockquote>
+    </li>
+  
+  <li><strong>Tarihçiler Çin mitolojisinin MÖ 12. yüzyıl sıralarında oluşmaya başladığını varsaymaktadır. Çin mitolojisinin en önemli kısmı ise yazılı dönemde, daha sonraları ortaya çıkmıştır. Çin mitolojisi, yaratılış mitleri, halk söylenceleri ile folklorik öğeler, tarihi olaylarla karışmış bir mit yapısı, efsanevi, tanrısal krallar barındıran kral listesi ile göze çarpar.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<blockquote>
+  <h1>Çin mitolojik öğeleri nelerdir</h1>
+  <p><strong>Ejderha; İyiyi temsil eder</strong></p>
+  <p><strong>Fei Lian; Rüzgarların hükümdarı (Boğa kafasına sahip yılan kuyruklu)</strong></p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+  <h1><span id="Mitin_.C3.87in_k.C3.BClt.C3.BCr.C3.BCndeki_konumu_ve_.C3.87in_miti">Mitin Çin kültüründeki konumu ve Çin miti</span></h1>
+  <p>
+</blockquote>
+<ul>
+  <li><strong>Çin mitolojisine dair yapılan çağdaş sayılabilecek ilk araştırmalar sonucu oluşan genel kanı Çin kültürünün diğer kültürlerdekinden daha farklı bir şekilde çok az oranda ve etkin olmayan bir mitoloji barındırdığına yönelikti. Buna gösterilen en büyük kanıt Çin mitlerine dair atıfların antik Çin metinlerinde genellikle oldukça parçalanmış bir şekilde bulunmasıydı. Bu yazınlarda bir mit bütününden bahsetmek pek olası değilken, büyük mitik temalar da göze çarpmamaktadır.</strong></li>
+</ul>
+<blockquote><strong>
+  <div class="hovergallery1"><img src="images/200px-Spirit_of_the_well_-_Project_Gutenberg_eText_15250.jpg" width="200" height="289" align="right" /></div>
+</strong></blockquote>
+<ul>
+  <li><strong>    Ek olarak antik Çin yazını büyük oranda anlatılıcılıktan uzaktır ve destansı tondan kaçınır (yani epik anlatılar oldukça zayıftır). Her ne kadar sonraki dönemlerde yapılan çeşitli araştırmalar kozmoloji, din ve felsefesinin metinlerde mitolojiden çok daha fazla bir yer tuttuğu ve önem taşıdığı sonucu çıkarılmış olsa ve dinî bir kültürün mitoloji olmaksızın ortaya çıkabileceği de mümkün olsa da bu Çin dinî düşüncesinin bir mitoloji barındırmadığı ve Çin mitolojisinin var olmadığı veya zayıf olduğu anlamını taşımaz. Özellikle yakın zamanda birçok uzman Çin mitolojisinin olmadığı veya Çin kültürünün mitik öğeler barındırmadığı yönündeki kanıları eleştirmiş ve bunların gerçek olmadığını, çeşitli araştırmalarla, izah etmişlerdir. Çin edebiyatı ve dili uzmanı Anne Birrell, bir Çin mitolojisi eksikliği veya yokluğu fikrinin yaygın olmasının temel sebebinin &quot;geleneksel Çin'in 'Konfüçyüscü emperyal ideolojisinin' popüler dinî ifadeler ve mitlere pek değer vermemesi ve bu önyargının da Aydınlanma sırasında Avrupalılarca kabul edilmesi ve bunun bugüne kadar sürmesi&quot; olduğunu iddia etmiştir. Ayrıca Birrell, Çin mitolojisinin özgün kaynaklarda parçalanmış bir şekilde bulunmasının bir sorun teşkil etmediği, tam tersine mitograflar ve diğer uzmanlar için olumlu bir şey olabileceğini öne sürmüş ve özellikle Çin mitolojisi uzmanlarından Norman J. Girardot'un yakındığı parçalanmış mit özelliğinin, Çin mitolojisinin <a href="yunan.html" title="Yunan mitolojisi" target="_blank">Yunan</a> ve <a href="roma.html" title="Roma mitolojisi" target="_blank">Roma mitolojilerinden</a> farklı ve<em>olumlu</em>, yapıcı bir yanı olduğunu ileri sürmüştür.</strong>
+    </p>
+    </li>
+  <li><strong>Çin mitolojisinde başlangıç ve sonlar çok büyük bir önem taşır. Bu çok çeşitli yaratılış mitlerinden (kozmogonilerden) ve olayların, icatların, canlıların başlangıcına dair anlatılmış birçok mitten aşikârdır. Çin mitolojisindeki önemli diğer öğeler de evrensel felâketler ve bunların sonucu oluşabilecek yeni <em>yaratılış</em> durumlarıdır. Ayrıca sonraki dönemlere doğru ağırlık kazanan bir başka husus da ideal yönetici fikridir ve Çin mitinde <em>ideal yönetici, imparator</em> fikri ve ilgili mitler çok büyük önem taşımaktadır. Antik zamanlarda hayvan-ata fikri, kabile vurgusu yaygınken daha sonraki dönemlerde tanrılar, insanlar ve hayvanlar belirli bir düzen içerisine oturtulmuş ve birbirlerine eski dönemlere oranla daha yabancı ve muhalif birer konuma getirilmiştirler. Sonra dönemlerdeki felsefî yükselişle birlikte bu mitlerin karakteri hakim felsefî fikre göre uyarlanmış olsa da eski dönemlerde çeşitli felâket mitleri ile kabilelere ilişkin yaratılış ve köken mitlerinin varlığı bilinmektedir. Sonraki dönemin bir farklılığı da kaostan düzene geçiş motifinin kaos ile ilişkilendirilmiş motiflerle düzen ve ahenk ile ilişkilendirilmiş motiflerin arasındaki kavgaya yapılan vurgular, Tanrı'ya inanç içermeyen çeşitli inançlar ve kozmogonik yaklaşımlar içermesidir. Yine bu dönemde daha da sonraları birer ideal yönetici örneği ve tasviri olacak çeşitli mitik ve tarihî öğeleri birarada barındıran imparatorlar ortaya çıkacaktır. Tüm bu geçişlerin sebebinin gerek siyasî, gerek toplumsal, gerekse felsefî değişimlerin sonucu olduğu kabul edilmektedir.</strong></li>
+  <li><strong>Çin mitolojisi, Budizmin Çin'de yayılmasıyla birlikte farklılaşmıştır. Bu sebeple Budizm öncesi Çin mitolojisi ile Budizm sonrası Çin mitolojisi, birbirine çok benzemekle birlikte, farklılıklar içerirler ve Budizm sonrası Çin mitolojisinde senkterizm yoğun biçimde görülmektedir. Mitlerde Budist kökenli öğeler, kahramanlar ile Daoist kökenli öğeler ve kahramanlar karışık biçimde yer aldıkları gibi bazen aynı kahraman hem Budist hem de Daoist özellikler sergileyebilir. Budizm öncesindeki Çin mitolojisine dair kaynaklar azdır ve bugün bu alandaki çalışmaların çoğu, görece konu aldığı zamandan daha yeni sayılabilecek, Konfüçyüsçü metinlerdendir. Çin mitolojisinin çok yoğun bir siyasî karakteri vardır; sonradan gelen Konfüçyüsçü alimler ve yazarlar mitleri genelde siyasî ve tarihî gerçeklikler olarak yorumlamış; bunlara siyasî ve tarihi anlamlar yüklemişlerdir. Örneğin &quot;iyi imparator&quot; ile &quot;kötü imparator&quot; gibi siyasî ve toplumsal fikirlerini bu mitlerde tarihî birer ibret ve nasihat kıssası olarak kaydetmişlerdir.</strong></li>
+</ul>
+<blockquote>
+  <h1><span id="Yarat.C4.B1l.C4.B1.C5.9F_mitleri">Yaratılış mitleri</span></h1>
+  <p>
+  <strong>
+    <div class="hovergallery1">      <img src="images/180px-Pangu.jpg" width="180" height="274" align="left" />      </div>
+  </strong></blockquote>
+<ul>
+  <li><strong>    Çin mitolojisinde birçok farklı yaratılış miti vardır. Bu mitler gerek barındırdıkları karakterler gerekse farklı dinî eğilimleri açısından birbirinden ayrılırlar. Bununla birlikte hepsinde belirli temalar hakimdir: kaostan düzene geçiş, ikici evren modelinin düzenle birlikte ortaya çıkışı ve yin ile yang. Ayrıca mitlerin genelinde İbrahimi Dinlerdeki <em>creatio ex nihilo</em> yani &quot;yoktan var etmek (yaratmak)&quot; anlayışından farklı olarak <em>yaratma</em> süreci var olan fakat şekilsiz, kaotik bir durumun şekilli, belirli ve düzenli bir duruma dönüştürülmesi anlamını taşımaktadır.</strong>
+    </p>
+  </li>
+</ul>
+<ul>
+  <li><strong>MÖ 2. yüzyılın ortalarından kalan <em>Huai Nan Zi</em> isimli metinde iki tanrının evreni nasıl yarattığını anlatan bir yaratılış miti mevcuttur. Bu iki tanrının ismi verilmez, kaostan çıkan tanrılar arz ve göğü yaratırlar ve kendileri yin<em> ile </em>yangı oluştururlar.</strong></li>
+</ul>
+<ul>
+  <li><strong>Çin mitolojisindeki bir başka yaratılış mitinde ise herhangi bir tanrıdan söz edilmez. Bu mite göre başlangıçta ne tanrı ne de tanrı benzeri bir şey vardır; sadece muazzam büyüklükte bir su buharı bulutu mevcuttur. Bu bulut, zamanla, kaotik ve şekilsiz bir durumdan düzenli ve şekilli bir duruma geçer, farklı doğalara sahip evren modelinin temelini oluşturan yin ile yangı oluşturur.</strong></li>
+</ul>
+<ul>
+  <li><strong>Çin mitolojisindeki en tanınmış ve kendisinden önceki birçok yaratılış mitine karşı hakimiyet kazanmış yaratılış miti Pan Gu'yu (veya <em>Pangu</em>) başrolde gösteren bir yaratılış mitidir. Diğer mitlere oranla oldukça yeni sayılabilecek, MS 3. yüzyılda ortaya çıkmış bu mitte hiçbir şeyin olmadığı, sadece kaosun, dev bir yumurtanın içindeki karanlık bir nem şeklinde var olduğu bir zamandan bahsedilir. İçinde yaratılış için gerekli tüm öğeleri bulunduran yumurtanın içinde zamanla, yaratıcı olacak, Pan Gu büyümeye başlar. Tamamen büyüdüğünde uyanan Pan Gu yumurtadan, onu kırarak, çıkar. Bu esnada yumurtanın içindeki yaratıcı öğeler her yana dağılır. Yin temelli öğeler arzı yaratırken, yang temelli öğeler göğü yaratırlar. Pan Gu bu ikisinin tekrar birbirlerine karışmaması için aralarına geçerek ve göğü taşıyarak ikisini birbirinden ayırır. Birbirlerine karışırlarsa tekrar kaosun ortaya çıkacağını düşünerek binlerce yıl ikisini bu şekilde ayrı tutar. Daha sonra gök ile arzın tamamen ayrıldığına inandığı vakit, bu işini bırakır ve dinlenmek için arza uzanır. Ölen Pan Gu'nun vücudunun ve varlığının farklı bölümleri doğal fenomenleri ve coğrafî şekilleri oluşturur: el ve ayakları kare olduğuna inanılan Dünya'nın köşelerini oluştururken, terinin yağmurları, nefesinin rüzgârları, kanının nehirleri, gözlerinden birinin Ay'ı birininse Güneş'i, vücudunun beş kutsal dağı oluşturduğuna inanılır. Bu mitle ilişkili bir nokta, bu genel <em>yaratılış</em> mitini insanın yaratılışı ile de ilişkilendirir: Pan Gu'nun vücudundaki pireler insanları oluşturur. Bununla birlikte bu değişimler farklı kaynaklarda farklı şekillerde yer almıştır. Bir başka mitte ise Pan Gu'nun yarattığı canlılardan hiçbirinin aklî yeteneğe sahip olmamasından üzülerek, insanı çamurdan elleriyle yarattığına ve daha sonra kurumaya bıraktığına değinilir. Bu hikâyeye göre Pan Gu insanları yaratmaya devam ederken, akşam olduğunda, yağmur yağmaya başlar ve Pan Gu her ne kadar henüz kurumamış olan eserlerini güvenli bir yere taşımaya çalışmışsa da bunların bir kısmı yağmurdan hasar görür. İşte bu hasar gören eserlerin, engelli insanların atası olduğuna inanılırdı.</strong></li>
+</ul>
+<ul>
+  <li><strong>İnsanlığın doğuşuna ilişkin ana tanrıça Nü Wa'yı başrole koyan mitler de bulunur. Han Hanedanlığı zamanından kalan, bu mitlerden birinde insanlığın yaratılışından önce Nü Wa'nın Dünya'da ne kadar yalnız hissettiğine değinilir. Bir gün bir gölette kendi aksini gören Nü Wa kendisine benzeyen ve ona arkadaşlık edebilecek bir yaratık yaratmayı aklına koyar ve çamurdan küçük insanlar yapmaya başlar. Bunları yere koyduğu anda, yaratıklar canlanmakta ve insanlara dönüşmektedir. Bir süre bu şekilde insan yapan Nü Wa bir süre sonra eğer bu hızda devam ederse tüm dünyaya yayılacak kadar çok insan yapmasının mümkün olmadığını fark eder. Bunun üzerine bir ip alır ve ipi çamura batırır, daha sonra bu ipi havada döndürür. Etrafa dağılan çamur damlacıkları yere düştüklerinde insanlara dönüşürler ve bu şekilde dünyaya insanlık yayılır. Etrafa bu şekilde saçılan çamur damlacıklarından oluşan insanların fakir ve soylu olmayan insanları, başta kendi elleriyle yaptığı insanlarınsa zengin ve soylu insanları oluşturduğuna inanılırdı.</strong></li>
+</ul>
+<blockquote>
+  <p>  
+  <h1>Büyük Tufan</h1></p>
+  </blockquote>
+<ul>
+  <li><strong>Birçok mitolojide kendisine yer edinen <em>tufan</em> fenomeni, Çin mitolojisinde de kendisine yer edinir.</strong></li>
+  </ul>
+<p>&nbsp;</p>
+<ul>
+  <li><strong>Büyük bir tufanı konu alan bir mitte Nü Wa ve hem erkek kardeşi hem de eşi olduğuna inanılan Fu Xi bir çiftçinin çocukları olarak yer alırlar. Çiftçi bir gün <em>Gök Gürültüsü</em>nü yakalar ve hapseder. Pazara inmesi gerektiğinde, çocuklarına ne olursa olsun Gök Gürültüsü'ne su vermemeleri gerektiğini tembih eder fakat o gittikten sonra kızı Gök Gürültüsü'ne su verir. Bunun üzerine hapsedildiği yerden bir anda taşarak çıkan Gök Gürültüsü iki kardeşe ağzından bir diş verir; onlara dişi ekmeleri söyler. Eve döndüğünde çiftçi olanları anlar ve büyük bir fırtınanın vuku bulacağını sezerek demirden bir gemi inşa etmeye başlar. Çocuklar ise dişi ekerler. Ekilen yerden bir asma türer ve asmada büyük birsu kabağı büyür. Su kabağının içini açan kardeşler, içinde de ektikleri dişe benzer birçok dişin olduğunu görürler. Fırtına yaklaşırken su kabağının içindekileri çıkarırlar ve tam zamanında su kabağına binerler. Çiftçi ise bitirdiği gemisine biner. Uzun bir süre fırtına devam eder ve sular cennete kadar yükselir. Bu gerçekleşince cennetin kapısına vuran çiftçi cennetekileri kızdırır ve cennetekiler suyun bir anda çekilmesini sağlarlar. Altlarındaki suyun bir anda çekilmesi sonucu iki gemi de bir anda yere düşer. Çiftçinin demir gemisi yere çarpar ve parçalanır, çiftçi de bu esnada ölür. Çocukların yumuşak olan su kabağı ise hafifçe yere iner. Dünya'da yaşayan tek kişiler artık kardeşlerdir. Bunlara bu olaydan sonra &quot;Fu Xi Kardeşler&quot; ismi verilir; Fu Xi Çince su kabağı anlamına gelmektedir. Kardeşler evlenir ve kız kardeş hamile kalır, bir et parçası doğurur. Bunun üzerine et parçasını küçük parçalara böler ve bir kâğıda sararlar. Fakat esen rüzgâr sonucu et parçaları etrafa dağılır. Bu et parçalarından da insanlar oluşur.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bir başka büyük tufan miti ise İmparator Yu ile ilişkilidir. Bu mite göre Yu'nun babası Gun Yao tarafından Sarı Nehrin taşması sonucu oluşan selin kontrol altında tutulması ile görevlendirilir fakat sorunu 9 yıl boyunca çözemez. Bu sebeple Shun tarafından öldürülür ve Yu babasının yerine getirilir. Yu birçok kanal ve set inşa ettirir ve zorluk içinde geçen 13 yıl sonra sel sorunu çözülmüş olur. Shun, Yu'ya tımar vererek onu ödüllendirir ve ölürken egemenliğini Yu'ya bırakır. Bütük Tufanı kontrol altına alması sebebiyle genellikle <em>Büyük Yu</em> (大禹) olarak anılır. Ayrıca, kendisinden önceki imparatorlar gibi, İmparator Yu (帝禹) olarak da anıldığı olur. Yu'ya dair bu anlatılar klasik <em>Shu jing</em> ve Shi jing en eski kısımlarında kendilerine yer bulmuşturlar.</strong></li>
+</ul>
+<blockquote>
+  <h1><span id=".C3.96nemli_tanr.C4.B1lar.2C_tanr.C4.B1.C3.A7alar_ve_kahramanlar">Önemli tanrılar, tanrıçalar ve kahramanlar</span></h1>
+  <p><strong>Çin mitolojisi politeistik bir yapıdadır. Bununla birlikte bu yapıya yol açan etmenlerden bazıları köken itibariyle ateistik olabilirler: Çin mitolojisini büyük oranda etkilemiş, özgün ve yerli Daoizmi kuran kişilikler eserlerinde herhangi bir tanrıdan veya tanrısal figürden söz etmemişlerdir. Bununla birlikte bu dinî ve mistik hareketlerin ortaya çıktığı veya Çin'e getirildiği dönemde (örneğin Budizmin Çin'e geldiği dönemde) Çin halkı hâli hazırda politeistik inançlara sahipti. Her ne kadar sistematik bir şekilde ele alınmamış olsa ve farklı yerel topluluklarda büyük farklılıklar gösterse de var olan politeizm netti; böylece zaman içinde yeni dinî ve mistik akımlar da bu politeizmi sahiplendi ve kendi düşüncelerinin temelleri doğrultusunda sistematize etti. Çok büyük bir hiyerarşiye sahip olan Çin politeizminde imtihanlarda başarıyı getiren tanrıdan mutfak tanrısına kadar çok çeşitlilik söz konusudur. Çeşitli önemli tanrıların altında, özellikle farklı yerel bölgelerde, birçok sayıda farklı tanrıya inanılmaktaydı. Ayrıca aynı konuyla ilişkilendirilen birden çok tanrı veya tanrıça bulunmaktaydı.</strong></p>
+  
+  <div class="hovergallery1">
+    <p><img src="images/200px-Taoist_Triad.jpg" width="200" height="286" align="left" /></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><strong>Daoizmdeki üçlemeyi gösteren bir betimleme.</strong></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="hovergallery1"><img src="images/200px-Liao_Dynasty_-_Guan_Yin_statue.jpg" width="200" height="267" align="right" /></div>
+  
+  
+  <ul>
+    <li><em><strong>Üç Saflık</strong></em><strong> : Daoizmdeki üçleme</strong></li>
+    <li><strong><em>Dört İmparator:</em>   Daoizmdeki cennetsel krallar
+      </strong>
+      <ul>
+        <li><strong>Yeşim İmparator: her şey ve herkesin hakimi</strong></li>
+        <li><strong>Beiji Dadi: yıldızların hakimi</strong></li>
+        <li><strong>Tianhuang Dadi :tanrıların hakimi</strong></li>
+        <li><strong>Dünya İmparatoriçesi </strong></li>
+        </ul>
+      </li>
+    <li><strong>Xi Wangmu : Batının ana kraliçesi; sonsuz yaşamın sırrına sahip olduğuna inanılırdı</strong></li>
+    <li><strong>Xuan Wu: ayrıca Bei Di  olarak da bilinir</strong></li>
+    <li><strong>Xuan Nü : Huang Di'ye  Chi You  karşısında yardım etmiş olan tanrıça</strong></li>
+    <li><strong>Sekiz Ölümsüz : Daoist
+      </strong>
+      <ul>
+        <li><strong>He Xiangu </strong></li>
+        <li><strong>Cao Guojiu </strong></li>
+        <li><strong>Tie Guaili </strong></li>
+        <li><strong>Lan Caihe </strong></li>
+        <li><strong>Lu Dongbin </strong></li>
+        <li><strong>Han Xiangzi </strong></li>
+        <li><strong>Zhang Guolao</strong></li>
+        <li><strong>Han Zhongli </strong></li>
+        </ul>
+      </li>
+    
+    <li><strong><em>Budist kökenli ilâhlar</em>
+      </strong>
+      <ul>
+        <li><strong>Guan Yin : Merhamet tanrıçası</strong></li>
+        <li><strong>Gülen Buda :Popüler Budist tanrı; mutluluk ve mülk tanrısı</strong></li>
+        <li><strong>Dizang: Ölülerin kurtarıcısı.</strong></li>
+        <li><strong>Yanluo :Cehennemin hakimi</strong></li>
+        <li><strong>Dört İlâhî Kral: Dört Budist koruyucu tanrı</strong></li>
+        <li><strong>Gautama Buddha :Bazılarınca tanrı olarak inanılan figür</strong></li>
+        </ul>
+      </li>
+    <li><strong>Lei Gong : Gök gürültüsü tanrısı</strong></li>
+    <li><strong>Guan Yu : Askerî güç, savaş ve kardeşlik tanrısı</strong></li>
+    <li><strong>Zhao Gongming: Zenginlik tanrısı</strong></li>
+    <li><strong>Bi Gan : Zenginlik tanrısı</strong></li>
+    <li><strong>Bi Fang: Ateş tanrısı</strong></li>
+    <li><strong>Kui Xing : İmtihan tanrısı</strong></li>
+    <li><strong>Sun Wukong :<em>Batı'ya Yolculuk</em> anlatısındaki Maymun Kral</strong></li>
+    <li><strong>Matsu :Deniz tanrıçası; cennetin kraliçesi olarak da tanınırdı (天后)</strong></li>
+    <li><strong>Zao Jun: Popüler mutfak tanrısı (veya tanrıları)</strong></li>
+    <li><strong>Tu Di Gong : Arazi tanrısı (veya tanrıları)</strong></li>
+    <li><strong>Tam Kung : Deniz tanrısı</strong></li>
+    <li><strong>Zhu Rong : Ateş tanrısı, Gong Gong'u yenmiştir</strong></li>
+    <li><strong>Gong Gong : Su tanrısı; ateş tanrısı ile savaşında, Buzhou Dağını ezmiş, göğü kırmıştır ki gök daha sonra Nü Wa tarafından onarılmıştır</strong></li>
+    <li><strong>Chi You : Savaş tanrısı, metal silahların mucidi; ayrıca Huang Di'nin de düşmanıydı</strong></li>
+    <li><strong>Da Yu : Taşkınları kontrol etmek için nehirlerin seyirlerini düzenleyen tanrı</strong></li>
+    <li><strong>Hou Yi : Güneşleri vuran, kurtarıcı bir okçu kahraman</strong></li>
+    <li><strong>Chang E : Hou Yi'nin karısı; Ay tanrıçası olmuştur</strong></li>
+    <li><strong>Han Ba : Antik kuralık tanrıçası</strong></li>
+    <li><strong>Gao Yao : Adalet ve yargı tanrısı</strong></li>
+  </ul>
+  
+  <h2><span id=".C3.87in_mitolojisinde_.C3.BC.C3.A7leme">Çin mitolojisinde üçleme</span></h2>
+  <p><strong>Birçok din ve mitolojide görülen <em>üçleme</em> olgusuna Çin mitolojisinde de rastlanır. Daoist geleneğe göre Üç Saf ve Berrak Olanlar, Üç Saf Olanlar, Üç Saflık gibi isimlerle anılan üç ilâhî figür her şeyin üstündeki, en önemli varlıklardır. Bunlar sırasıyla: yaratılışın kökeni Yu-ch'ing (Kanton lehçesi: Yoc-Tsing), ilâhîliğin ve zenginliğin kökeni Shang-ch'ing (Kanton lehçesi: Serng Tsing) ve Dao ve erdemlerin kökeni T'ai-ch'ing (Kanton lehçesi: Tai Tsing) olarak isimlendirilirler. Yaratılışın kökeni olan Yu-ch'ing'in ise başlangıçta saf enerjiden ortaya çıktığına, bu bir varlığın iki varlığa dönüştüğüne (neden olduğuna), iki varlığınsa üç varlığa dönüştüğüne (neden olduğuna) inanılır. Buradaki dönüşmek veya neden olmakHıristiyan inancındaki üçlemedeki neden olmaya benzer bir şekildedir ve insanî üremeye benzer bir tür <em>doğurma</em> fiilinden farklıdır. Daoist yazınlarına göre, Dao ve erdemlerin kökeni olan T'ai-ch'ing zaman içinde çeşitli şekillerde vücut bularak insanlara doğruları öğretmeye çalışmıştır. Daoizmde, Daoizmin kurucusu olan Laozi'nin de T'ai-ch'ing'in enkarnasyonlarından yani vücut bulmuş hâllerinden birisi olduğuna inanılır.</strong></p>
+  <h2><span id="Ye.C5.9Fim_.C4.B0mparator">Yeşim İmparator</span> </h2>
+  <div class="hovergallery1"><img src="images/150px-JadeGod.PNG" width="150" height="161" align="right" /></div>
+  <p><strong>Yeşim İmparator Daoist geleneğe göre cennet başta olmak üzere varlığın mevcut olduğu tüm mekânların (cehennem dahil) mutlak hâkimidir. Budist gelenekteki karşılığı Śakra'dır. Çin mitolojisindeki Daoist panteonda özellikle önemli bir yere sahiptir. Mitlere göre başta Yu Huang, Daoist üçlemedeki yaratıcı tanrı Yu-ch'ing'in yardımcısıydı ve daha sonra onun tarafından halef olarak seçilmişti ve böylece Çin mitolojisi panteonunun baş tanrısı olmuştu. Yu Huang'ın kendisine hizmet eden birçok tanrı ve tanrıçası vardır; bunlar dünyevî işlerle ilgilenir, Yu Huang'a rapor verirlerdi. Şehirlerle ilişkilendirilmiş Cheng Huang ve Tu Di gibi tanrılar Yu Huang'a hizmet eden başlıca tanrılardandırlar. Mitlere göre Tai Dağının tanrısı Tai-yue da-di de onun hizmetkârlarındandı. Çin İmparatorunun da Yu Huang'ın bir alameti olduğuna inanılırdı ve inanışa göre hükümdar eğer uygunsuz birisiyse ve erdemsiz hareketlerde bulunursa kötü bir sonla cezalandırılmaktaydı. İlk kamerî ayın dokuzuncu günü doğum günü sayılan ve kutlanan <em>Yeşim İmparator</em>, Çin mitinde önemli bir yere sahiptir ve Çin zodyağındaki 12 hayvanın seçilmesine dair bir mitten insanlığın yaratılışına dair mitlere kadar birçok çeşitli mitte kendisine yer verilmiştir.</strong></p>
+  <h2><span id="Sekiz_.C3.96l.C3.BCms.C3.BCz">Sekiz Ölümsüz</span></h2>
+  </blockquote>
+<ul>
+ <div class="hovergallery1">
+   <p><img src="images/270px-Eight_Immortals_Crossing_the_Sea_-_Project_Gutenberg_eText_15250.jpg" width="270" height="379" align="left" /></p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p><strong>Sekiz Ölümsüzün denizi geçişini gösteren bir betimleme.</strong></p>
+   <p></p>
+<p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+ </div>
+ <li><strong>Çin mitolojisindeki Daoist geleneğin bir diğer önemli öğesini de <em>Sekiz Ölümsüz</em> olarak adlandırılan sekiz kişi ve onlarla ilgili mitlerdir. Anlatılara göre bu sekiz kişi aslında oldukça sıradan kişilerdir fakat Daoizmin temel fikriyatını mükemmel bir şekilde uygulamış, hayatın özüyle mükemmel bir şekilde birleşmişler ve bu sebeple de ölümsüzlüğe hak kazanmışlardır. Sekiz Ölümsüze dair ilk anlatıların tam olarak ne zaman çıktığı bilinmemektedir. Bununla birlikte genel kanı 14. yüzyıl civarında, yani diğer mitlere oranla oldukça geç ortaya çıktığına yöneliktir. Penglai Dağı Adasında yaşadıklarına inanılan Sekiz Ölümsüzün çoğunluğunun Tang veya Song Hanedanlığı zamanında doğduğu söylenmektedir.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bahsi geçen Sekiz Ölümsüzün şu kişiler olduğuna inanılmıştır:</strong>
+    <ul>
+      <li><strong>He Xiangu (veya <em>Ölümsüz Kadın He</em>),</strong></li>
+      <li><strong>Cao Guojiu (veya <em>Asil Amca Cao</em>),</strong></li>
+      <li><strong>Li Tieguai,</strong></li>
+      <li><strong>Lan Caihe,</strong></li>
+      <li><strong>Lü Dongbin,</strong></li>
+      <li><strong>Han Xiang (Han Xiang Zi veya <em>Filozof Han Xiang</em>),</strong></li>
+      <li><strong>Zhang Guo (Zhang Guo Lao veya <em>Zhang Guo Ata</em>), ve</strong></li>
+      <li><strong>Zhongli Quan.</strong></li>
+    </ul>
+    </li>
+  <li><strong>Her ne kadar Sekiz Ölümsüz kişiden hangisinin ilk kez ölümsüzlüğe ulaştığı tartışmalı da olsa, genel kanı Li Tieguai'nin ölümsüzlüğe ilk ulaşanları olduğudur. Li Tieguai topaldı; bununla birlikte doğuştan mı yoksa sonradan mı topal olduğu tartışmalıdır. Yine de özellikle sonraki dönemlerde, genellikle sonradan topal olduğu görüşü yaygınlık kazanmıştır. Bu görüş bir mite dayanmaktadır: ruhu Daoizmin kurucusu Laozi'nin bir çağrısı üzerine bedenini geride bir öğrencisine emanet bırakır ve eğer yedi gün içerisinde dönmezse bedenini yakmasını zira o süre zarfında dönmezse tamamen ruha dönüşeceği, mükemmeliyeti yakalamış olacağını öğütler. Altıncı günde annesinin ölümcül bir şekilde hasta olduğu haberini alan öğrencisi, üstadının büyük ihtimalle zaten mükemmeliyete ulaşmış olduğunu düşünerek bedeni yakar; oysa durum bu değildir ve dönen Li vücudunun külleriyle karşılaşır. Bunun üzerine kendisine uygun bir vücut ararken yeni ölmüş topal bir dilencinin cesedini görür ve buraya yerleşir. Mitler Li Tieguai'nin topallığını işte bu anlatıyla açıklamaktadırlar. Mitlere göre sofu bir hayattan sonra bir gün Laozi, Li Tieguai'yi insan formunda ziyaret etmiş ve onu sınamıştır. Sınamalardan başarıyla çıkan Li Tieguai'ye ölümsüzlük verilir.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<blockquote>
+  <p><span id="Be.C5.9F_Element"><h2>Beş Element</h2>
+  </span></blockquote>
+<ul>
+  <li><span><em><strong>Vu Şing</strong></em><strong>yani <em>Beş Element</em> Çin mitolojisi ve kültürü açısından çok önemli bir kavramdır. Beş Element kavramı tüm doğal fenomenleri ve bunların birbirleriyle olan ilişkilerini açıklamakta kullanılır ve mitte önemli bir yere sahip olduğu gibi Çin kültüründe yönlendirici role sahip olan kozmoloji ve felsefe için de çok önemli anlamlar taşır. Çin kültürüne göre bu beş element şunlardır:</strong></span></li>
+</ul>
+<blockquote>
+  <ul>
+    <li><strong>metal </strong></li>
+    <li><strong>tahta</strong></li>
+    <li><strong>su </strong></li>
+    <li><strong>ateş</strong></li>
+    <li><strong>toprak </strong></li>
+  </ul>
+  </blockquote>
+<ul>
+  <li><strong>İki Denge Döngüsü olduğuna inanılır; biri yaratılış diğer ise yok ediş döngüsüdür. Yaratılış döngüsüne göre: tahta ateşi besler, ateş toprağı (külü) oluşturur, toprak metali doğurur, metal suyu toplar, su da tahtayı besler. Yok ediş döngüsü ise şöylerdir: tahta topraktan ayrılır, toprak suyu emer, su ateşi söndürür, ateş metali eritir ve metal tahtayı keser.</strong></li>
+</ul>
+<ul>
+  <li><strong>Yaratıcı tanrı Pan Gu'ya ilişkin bir yaratılış mitinde, Pan Gu'nun Beş Elementten doğduğu belirtilir. Bu mite göre doğumundan sonra Pan Gu Dünya ve Göğü (Cenneti) bir çekiç ve iskarpela yardımıyla yaratır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bir mite gören Huang Di ile Yan Di'nin arasında geçen savaşta elementler önemli bir rol oynamıştır. Eski kaynaklarda mit aktarılırken, Huang Di'nin suyu kullanarak, Yan Di'nin ise ateşi kullanarak savaştığına değinilir ve bu mit içerisinde önemli bir yere sahiptir. Sonuçta savaşı su kazanır ve galip Huang Di olur. Yan Di'nin yaşlıyken Huang Di'nin daha genç olması da bazı anlatılarda vurgulanmıştır. Kaybeden Yan Di ise güneye kaçar.</strong></li>
+</ul>
+<blockquote>  
+  <h2><span id="Efsanevi_yarat.C4.B1klar">Efsanevi yaratıklar</span> </h2>
+  </blockquote>
+<ul>
+  <div class="hovergallery1"><img src="images/200px-Gilt_hexagonal_silver_plate_with_a_feilian_beast_pattern.jpg" width="200" height="150" align="right" /></div>
+<li><strong>Çin mitolojisinde birçok farklı yaratık bulunmaktadır. Bunlar genelde birçok farklı hayvanın özelliğini bir arada bulunduran hibrit yaratıklardır. Hibrit yaratıkların en ünlü örneğin <em>qilin</em> (ve <em>ki-lin</em>) olarak anılan mitik yaratıktır. Buna göre qilin farklı şekillerde, farklı hayvanların farklı bölümlerine sahip olabilen bir hayvandır. Bir qilinin ortaya çıkışı iyiye işaret olarak kabul edilir ve bir tür şans göstergesidir. Bir qilinin ortaya çıkması aynı zamanda bir bilgenin gelişi ile ilişkilendirilmiştir; inanışa göre düşünür Konfüçyüs'ün doğduğu sıralarda bir qilin görülmüştür. Zamanında Çin halkının tanımadığı ve bilmediği bir hayvan olan zürafa da Çin İmparatoruna hediye olarak ilk kez gönderildiğinde, bir <em>qilin</em> olarak anılmış ve betimlenmiştir. Hibrit yaratıklara bir başka örnek de rüzgârların hükümdarı <em>Fei Lian</em>'dır (飞廉). Betimlemelere göre bir boğa kafasına sahip olan <em>Fei Lian'</em>ın kanatları vardı ve sıklıkla yılan kuyruğuna sahip bir şekilde betimlenirdi.</strong></li>
+</ul>
+<ul>
+  <li><strong>Çin mitolojisinin en önde gelen yaratığı, yang ve imparator ile ilişkilendirilen ejderhadır. Ejderhalar Çin mitolojisinde genellikle iyiyi temsil eden, hikmet sahibi yaratıklardır. Su ile ilişkilendirilen bu hayvanların, ilk kez yağmur tanrıları olarak ortaya çıktıkları, daha sonra Çin mitolojisindeki kalıcı yerlerini edindikleri kabul edilmektedir. Nitekim Çin Yılbaşısı kutlamalarında yapılan <em>Ejderha Dansı</em> aslında kökeni itibariyle bir tür yağmur duası, ritüelidir. Su ve gökle sıklıkla ilişkilendirilen ejderhaların nehir ve göl gibi su kaynaklarında yaşadığına inanılırdı. Özellikle kuraklık zamanlarında ejderhalar yardıma çağrılırdı ki bu tema mitlerde de kendisine yer bulmuştur. Çin mitolojisinde bazı ejderhalar bireysel olarak diğerlerinden öne çıkmışlardır. <em>Ying Long</em> (應龍), <em>Üç Hükümdar</em>dan Huang Di'nin hizmetkârı olan, mitlerde kendine yer bulmuş bir ejderhadır. Mitlere göre Huang Di'nin savaşlarında Huang Di'ye yardımcı olmuş olan Ying Long güçlü sağanaklara yol açabilecek kuderete sahiptir. Yağmuru yönetebilen bir başka ejderha da, yağmur ve rüzgâr tanrılarından olan Shen Longdur (神龍).Boynuzlu ejderha <em>Jiao Long</em> (蛟龙) da taşkınlarla ilişkilendirilmiş bir mitik ejderhadır. Bunların yanı sıra <em>Tian Long</em> (天龍) isimli, tanrıların arabalarını çeken ejderhalarda mitlerde kendilerine yer bulmuşlardır.</strong></li>
+</ul>
+<ul>
+ <div class="hovergallery1"><img src="images/200px-Chinese_draak.jpg" width="200" height="133" align="right" /></div>
+<li><strong>Ejderhalar yang ve imparator ile ilişkilendirilirken, <em>Feng Huang</em> da yin ve imparatoriçe ile ilişkilendirilir. Bir tür anka kuşu olan Feng Huang, su ile ilişkilendirilen ejderhanın karşıtı olarak ateş ile ilişkilendirilirdi. Nasıl ejderha yağmuru temsil ediyorsa, Feng Huang da kuraklığı temsil ederdi. Güney yönü ile ilişkilendirilen Feng Huang bu sebeple bazen Güneyin Kızıl Kuşu olarak da anılmıştır. Feng Huang da ejderha gibi iyilikle ilişkilendirilirdi ve mutluluk, şans getirdiğine inanılırdı. Feng Huang da Çin mitolojisindeki birçok yaratık gibi hibrit özellikler taşımaktaydı: tavuskuşu kuyruğuna sahipken, ibiği ve başı sülündendi. Çin mitolojisinde Feng Huang'ın dışında da çeşitli mitik kuşlar yer almıştır. Bunların bir örneği <em>Jing Wei</em>'dir. İmparatorlardan Shen Nong'un kızı olan Nü Wa (aynı isimli tanrıça ile karıştırılmamalıdır) bir gün denizde kayığıyla gezerken olan bir kaza sonucu boğulur. Mitlere göre Nü Wa'nın ruhu bir kuşa dönüşür; bu kuşun kızıl ayakları, rengarenk bir kafası ve beyaz bir gagası vardır ve ismi <em>Jing Wei</em>'dir (精衛). Genç yaşta boğulduğu için denize kızan ve kuş formunda olan ruhun, başkalarının da denizde boğulmaması için denizi dallar ve çakıl taşlarıyla doldurmaya çalıştığına inanılır. Çin mitolojisindeki bir başka kuş da <em>Peng</em> (鵬) isimli dev kuştur. Efsanelere göre bu kuş çok hızlı bir şekilde ve durmaksızın uçabilirdi. Bu kuşun bir başka özelliği de sadece kuş formunda olmamasıydı; <em>Kun</em>(鯤) olarak anılan diğer formu dev bir balıktı ve gerektiği zaman balık formundan kuş formuna geçebiliyordu.</strong></li>
+</ul>
+<blockquote>
+  <h2><span id="Mitolojik_yerler_ve_Mitik_co.C4.9Frafya">Mitolojik yerler ve Mitik coğrafya</span> </h2>
+  <p><strong>Antik Çin anlayışında Dünya kare şeklindeydi ve tam ortasında Çin ülkesi bulunurdu. Bu sebeple Çin'e <em>Orta Krallık</em> dedikleri de olurdu. Batı'da bulunan efsanevi bir krallık birçok mite, özellikle de Okçu Yi ile ilgili mitlere, konu olmuştur. Bu krallığın hükümdarının Xi Wang Mu isimli bir kraliçe olduğuna inanılırdı ve kendisine sıklıkla <em>Batının Ana Kraliçesi</em> denirdi. Bu ülke ve kraliçesi sıklıkla ölümsüzlük ile bağdaştırılmıştır. Çin coğrafyasındaki bir başka mitik öğe de <em>Beş Yüce Dağ</em> kavramıdır. Daoist gelenekte kutsal olan bu <em>Beş Yüce Dağ</em>şunlardır: Tài Shān , Huà Shān ,  Héng Shān,  Héng Shān , Sōng Shān . Daha sonraları Çin mitolojisini önemli biçimde etkileyen Budizm ise, benzeri şekilde kutsal dağlara sahiptir fakat bunlar dört tanedir ve <em>Budizmin Dört Kutsal Dağı</em> olarak anılırlar. Bunlar şu dağlardır: Wǔtái Shān , Éméi Shān , Jiǔhuá Shān , Pǔtuó Shān .</strong></p>
+  <ul>
+    <li><strong>Xuanpu , Kunlun Dağı'ndaki mitik bir periler ülkesi.</strong></li>
+    <li><strong>Yaochi , Xi Wang Mu'nun da yaşadığı, ölümsüzlerin mekânı.</strong></li>
+    <li><strong>Fusang , sıklıkla Japonya olarak yorumlanan, mitik bir ada.</strong></li>
+    <li><strong>Queqiao , Saman Yolu üzerine kuşlar tarafından kurulmuş köprü.</strong></li>
+    <li><strong>Penglai , cennet, Çin Denizi'ndeki ölümsüzlerin yaşadığına inanılan efsanevi bir ada.</strong></li>
+    <li><strong>Di Yu , cehennem.</strong></li>
+  </ul>
+<p><strong>  
+</p>
+  <blockquote>
+    <p></p>
+</blockquote>
+</blockquote>
+      <strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2">
+<img src="images/200px-Japanese_dragon,_Chinese_school,_19th_Century.jpg" width="252" height="200" />
+<div class="desc">Bir Çin mitolojisi ejderhası<a href="http://tr.wikipedia.org/wiki/Ejderha" title="Ejderha">ı</a>; 19. yüzyıldan kalma. Çin mitolojisinde ejderhalar hikmetin tecessümü sayılan, değer verilen ve iyiliksever olduğuna inanılan yaratıklardı.</div>
+</div>
+
+
+<div class="hovergallery1">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><img src="images/resimanon.jpg" width="200" height="401" /></p>
+</div>
+
+
+
+</div>
+</body>

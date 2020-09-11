@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+
+
+
+<link href="still.css" rel="stylesheet" type="text/css" />
+</head><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mitolojiler</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #FFF;
+}
+</style>
+
+<style>
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: white;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #778;
+border-right: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #B30000; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: #000000;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+	background-image: url(images/right.gif);	 
+}
+
+.sidebarmenu a.subfolderstyle{
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+	
+	</style>
+ <script type="text/javascript">
+ 
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+ 	
+    
+    
+  
+    
+    
+    
+</head>
+
+<body>
+<div class="genel">
+<div class="solustresim"><img src="images/solustresim.jpg" width="200" height="300" /></div> 
+  <div class="banner"><img src="images/auroragf3.jpg" width="890" height="196" /></div>
+  
+  <div class="link"><ul class="solidblockmenu">
+
+<li><a href="index.html" class="current">Mitoloji Nedir?</a></li>
+<li><a href="dinvemitoloji.html">Din ve Mitoloji</a></li>
+<li><a href="mitlerinolusumu.html">Mitlerin Oluşumu</a></li>
+<li><a href="cagdasmitoloji.html">Çağdaş Mitoloji</a></li>
+<li><a href="mitolojinintanimiicinsoylenenler.html">Mitolojinin Tanımı İçin Söylenenler</a></li>
+<li><a href="kaynaklar.html">Kaynaklar</a></li>
+
+</ul>
+    <div class="ortayaziicerik">
+<blockquote>
+        <p>&nbsp; </p>
+        <h1 id="firstHeading2" lang="tr" xml:lang="tr"><span dir="auto">İskandinav mitolojisi</span></h1>
+      </blockquote>
+<ul>
+  <li><strong>Nors veya İskandinav mitolojisi, İskandinav insanlarının Hıristiyanlık öncesi dinleri, inanışları ve efsaneleridir. M.Ö. 1000 yıl sonrasında, birçok avrupa ülkesinde Indo-Avrupa dili konuşuluyordu. M.Ö. ilk bin yılın ortalarında Alman kabilelerinden Güney İskandinavya ve Kuzey Almanya bölgesinde yaşamışlardı. Onların yayılmaları ve ilerlemeleri M.Ö. 2. yüzyılla kadar devam etti. Bu yüzden İskandinav ve Alman mitolojileri aynı temeller üzerindedir ve birçok ortak noktası vardır. Snorri Sturluson'un Eddası (1179-1241) bu efsanelerin çoğunu içerir. Mitolojinin yaratılış detaylarını çok çeşitli kaynaklara dayanarak sadece Snorri kaleme almıştır.</strong></li>
+</ul>
+<ul>
+  <li><strong>Başlangıçta boşluk vardı (Ginnungagup). Dünya daha var olmadan önce 11 nehir akan Niffleheim'da ölüm var oldu. Niflheim'ın güneyinde başka bir sıcak dünya daha oluştu; Muspell; Devlerin koruduğu yer. Devler buraya Stur yani Siyah dediler. Niflheim'ın nehirleri donmuştu. Bu nehirlere Ginnungagup dendi. Günün birinde Muspell'deki kıvılcımlar nehirlerin üzerine düştü ve nehirleri eritti. Erimiş nehirlerden oluşan damlacıklar Ymir'i şekillendirdi ve Ymir'in terinden diğer dişi ve erkek devler oluştu.</strong></li>
+</ul>
+<ul>
+  <li><strong>Yaratılış efsanesinin bir başka versiyonu daha vardır:</strong></li>
+  </ul>
+<p>&nbsp;</p>
+<ul>
+  <li><strong>Eriyen damlalar en ilkel inek şeklini aldılar. Audhumla; sütüyle Ymir'i besleyen inek. Audhumla aynı zamanda tuz parçalarını yalayarak bu bloklara ilk insan şeklini verir. İlk insan Buri. Buri'nin, bir devin kızı olan Bolthor ile evli bir oğlu vardır; Bor. Bolthor'u Odin,Vili ve Ve birleşerek Bor'a uygun bir biçimde yarattılar.Ve şeklinden dolayı Ymir'i öldürdüler. Ve sonra iki tane ağaç yarattılar. Düşünen, nefes alan, duyan ve de görebilen iki ağaç... Bu ağaçlar insan ırkının ilk modelleriydi. Erkeğe Askr (ash tree → kül ağacı), dişiye de Embla (Sarmaşık) dediler. Ardından Asgard'ı yarattılar. Tanrıların meskenini. Snorri diğer birçok versiyonda kader ağacı Yggdrassil'den bahseder. Onun ne kadar ihtişamlı olduğunu, dünyanın merkezinde nasıl görkemli bir şekilde yükseldiğini tasvir eder. Ağacın altındaki kader feminen formu olarak tasvir edilir ve insan hayatının buradan başladığı düşünülür.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bazı versiyonlarda da Tanrıların büyük meclisinin burada toplanıp kararlar aldığından bahsedilir. Bu ağaç üç köklüdür; Bu köklerden biri cehenneme kadar uzanır, diğeri devler ülkesine gider ve sonuncu kök de insanların dünyasına gider. Bütün dünyanın mutluluğu bu ilk ağaca bağlıydı. İskandinav tanrıları iki grupta toplanır; Aesir ve Vanir tanrıları. Aesir'in en önemli tanrıları; Odin, Thor ve bazende Tyr, Vanir'de ki önemli tanrılar ise Njord, Frey ve Freya dır. Vanir; Zenginlik, verimlilik ve doğurganlığı simgeler. Doğurganlığı sembolize eden toprak ve denizle sembolleştirilmiştir Vanir. Aesir; Diğer bütün değerlerle sembolleştirilmiştir. Odin bir büyücüdür, tanrıların şefidir ve tüm kahramanların başıdır. Thor, çekicin tanrısıdır ve havaya hükmeder. Birçok öyküde bu ikili barış içinde yaşarlar ve birbirlerine yardım ederler. En önemli mitolojik hikâyeler uzak geçmişte bir zamanda, Vanir ve Aesir arasında çok vahşi bir savaşın çıktığından bahseder. Bazı bilginler bu savaşın Alman ırkının diğer ırklarla karşılaşmasının bir yansıması olarak görürler. Georges Dumezil ve Jan De Vries, tanrılar arasındaki savaş ve bölünmenin Indo-Avrupa mitolojisinin bir parçası olduğunu ortaya çıkardılar.</strong></li>
+</ul>
+<ul>
+  <li><strong>Bilinen üçlü; sihirsel güçleri adilce kullanan Odin ve Thor tarafından yaratılmıştı.Tyr savaş tanrısı ve Vanir bolluk tanrısı beraberce hiyerarşiyi bozguna uğratmışlardı. İskandinav mitolojisinde Odin ve Thor arasındaki çelişki, bütün tanrılık statülerinin Vanir'de kalmasıyla başladı. Aesir'e bir kadın olan Gullveig'i (Altın sarhoşu) göndererek yalvardılar. Daha sonra da savaş çıktı. Her iki tarafta tükendikten sonra, iki taraf kendi grup üyelerini değiş tokuş etti. Vanir Njord ve oğlu Frey'i ,Aesir ise Mimir ve Hoenir'i verdi. Bu geçici barış tüm tanrıların toplanarak Kvasir' i yaratmalarıyla kutlandı. Kvasir barış ve mutluluğun sembolü daha sonra kurban edildi. Ve kanından tanrılar için bir içki yaratıldı. Böylece Kvasir Tanrıları sarhoş eden ve ozanlara ilham veren bir içecek olmuştu.</strong></li>
+</ul>
+<ul>
+  <li><strong>Önemli bir başka mitolojik efsane de Balder ve Loki'yi anlatır. Odin'in oğullarından Balder burada akıl, sevgi ve bilginin tanrısı olarak karşımıza çıkar. Cennette Glitnir denilen bir yeri korumaktadır. Her türlü anlaşmazlıkta bütün tanrılar onun adaletine güvendiklerinden ona gelirler ve burada Balder'in adaleti sağlaması beklenir.Ve Balder adaleti yerine getirir. Loki Aesir tarafından evlat edinilmiş bir devdir. Loki ve Odin aralarında bir dostluk antlaşması yapmışlardı. Bir gece Balder kendi ölümü hakkında çok rahatsız edici bir rüya görür.Annesi Frigg, su, ateş, doğadaki bütün elementlere, kuşlara, canavarlara, toprak ve taşlara, Balder'a zarar vermemeleri için yemin ettirir. Böylece Balder Ölümsüz olur. Bundan sonra Aesir Balder'ı ortalarına alıp onunla eğlenmeye başlar. Ona küçük ok, taş vs. şeyler atarlar. Bu yeminden dolayı Balder sadakatsizliklle karşı karşıya kalmıştır. Loki bu dramayı görünce merak eder ve kadın kılığında Frigg'in yanına giderek ona neler olduğunu sorar. Frigg de ona yeminden bahseder ve yeminin içine katılmayan tek şeyin ökse otu olduğunu da sözlerine ekler. Bunu duyan Loki hemen Aesir'e sunulmak üzere ökse otu getirir. Bunu kör tanrı Hoder'e kendi isteği ile verecek ve böylelikle Balder'a acı çektirme oyununa o da katılabilecektir. Balder'a ökse otundan yapılmış ok atılır ve Balder ölür. Aesir bu olayın suçlusundan intikam almak ister ama bulundukları yerin kutsallığından dolayı bunu yapamazlar. Balder Hel'e gidecektir,yani tüm ölülerin gittiği yere çünkü o bir savaşçı değil ve bir savaşta ölmemiştir dolayısıyla da kahramanların yeri olan Valhalla'ya gidemez. Balder Hel'den ancak Odin onun çıkmasına izin verdiğinde ve aynı zamanda yaşayan ve ölü olan her canlının onun için göz yaşı döktüğü zaman çıkabilecektir. Aksi takdirde sonsuza dek orada kalmaya mahkûm olacaktır. Bu kehanet üzerine Aesir bütün dünyaya elçiler yollar. Doğaya, insanlığa, tanrılara ve onlara Balder için göz yaşı dökmelerini emreder. Bunu tüm yaşayanlar kabul eder. Tabii ki Devlerin kraliçesi Thork (kılık değiştirmiş Loki) hariç. Ve ağlamamak için de kesin kararlıdır. Aesir Thork'un Loki olduğunu farkettiğinde, onun bu şeytanca oyunlarına son vermesi için zincire vurur.</strong></li>
+</ul>
+<ul>
+  <li><strong>Kehanete göre Loki bir gün bir şekilde zincirlerini kıracak ve bu bütün şeytanların canavarların ve devlerin tanrılara karşı olan büyük savaş Ragnarok'ta kaybedeceğinin işareti olacaktır. Ragnarok'ta Odin kurt Fenrir tarafından yenilir. Daha sonra da Fenrir Odin'in oğlu Vidar tarafından öldürülür. Bu olaydan sonra tanrılar arasındaki korkunç savaşlar başlar. Tanrı Heimdall ve Loki karşı karşıya gelip birbirlerini öldürene kadar savaşırlar. Ve daha sonra Dünya bir ateşle yok edilir. Evren denizin dibine batmaya başlar. Bu son tekrar doğuşla kendini devam etirir. Dünya denizden tekrar yükselir, yeşillenir, bitkilerle dolup taşar. Aesir'in ölü oğulları Asgard'a geri döner ve atalarının yolunu izlerler.</strong>
+    <h1><span id="Tanr.C4.B1lar_ve_.C3.B6zellikleri">Tanrılar ve özellikleri</span></h1>
+  </li>
+  <li><em><strong>Balder - Aydınlık, barış, yeniden doğum ve adalet tanrısı. Eşi: Nanna</strong></em></li>
+  <li><strong><em>Bor - Odin, Vili ve Ve'nin babası. Eşi: Bestla</em></strong></li>
+  <li><strong><em>Bragi - Şiir tanrısı. Eşi: Idunn</em></strong></li>
+  <li><strong><em>Buri - İlk tanrı ve Borr'un babası.</em></strong></li>
+  <li><strong><em>Dagr - Gündüz tanrısı, Delling ve Nott'un oğlu.</em></strong></li>
+  <li><strong><em>Delling - Şafak tanrısı ve Dagr'ın Nott'dan olan oğlu.</em></strong></li>
+  <li><strong><em>Eir - İyileştirme tanrısı.</em></strong></li>
+  <li><strong><em>Forseti - Adalet, barış ve doğruluk tanrısı. Balder'in ve Nanna'ın oğlu.</em></strong></li>
+  <li><strong><em>Freyja - Bereket, sağlık, aşk, güzellik, sihir, kehanet, savaş, çarpışma ve ölüm tanrıçası. Eşi: Od</em></strong></li>
+  <li><strong><em>Frey - Erkeklik gücü tanrısı. Eşi: Gerd</em></strong></li>
+  <li><strong><em>Frigg - Evlilik ve annelik tanrıçası. Eşi: Odin</em></strong></li>
+  <li><strong><em>Fulla - Frigg´in hizmetçisi.</em></strong></li>
+  <li><strong><em>Gefjun - Bereket ve saban tanrıçası.</em></strong></li>
+  <li><strong><em>Hel - İskandinav mitolojisindeki yeraltı diyarı Hel'in kraliçesi.</em></strong></li>
+  <li><strong><em>Heimdall - Asgard'ın koruyucusu.</em></strong></li>
+  <li><strong><em>Hermod - Odin'in oğlu.</em></strong></li>
+  <li><strong><em>Hlin - Teselli tanrıçası.</em></strong></li>
+  <li><strong><em>Hod - Kış tanrısı.</em></strong></li>
+  <li><strong><em>Hoenir - Sessiz tanrı.</em></strong></li>
+  <li><strong><em>Idunn - Gençlik tanrıçası. Eşi: Bragi.</em></strong></li>
+  <li><strong><em>Jord - Yeryüzü tanrıçası. Thor'un annesi.Odin'in oğlu.</em></strong></li>
+  <li><strong><em>Kvasir - İlham tanrısı.</em></strong></li>
+  <li><strong><em>Lofn - Aşk tanrıçası.</em></strong></li>
+  <li><strong><em>Loki - Düzenbaz, yaramazlık, sorun ve ateş tanrısı. Eşi: Sigyn</em></strong></li>
+  <li><strong><em>Mani - Ay tanrısı.</em></strong></li>
+  <li><strong><em>Mimir - Odin´in amcası.</em></strong></li>
+  <li><strong><em>Nanna - Balder'in karsı ve Forseti'nin annesi.</em></strong></li>
+  <li><strong><em>Nerthus - Tacitus tarafından bahsedilen tanrıça.</em></strong></li>
+  <li><strong><em>Njord - Deniz, rüzgar, balık ve bolluk tanrısı.</em></strong></li>
+  <li><strong><em>Norn - Kaderin üç tanrıçası; Urd(Yazgı), Skuld(varlık, ya da gelecek), Verdandi(ihtiyaç, ya da hediye).</em></strong></li>
+  <li><strong><em>Nott - Gece tanrıçası, Narvi'in kızı ve Aud, Jord ve Dagr'in annesi.</em></strong></li>
+  <li><strong><em>Odin - Aesir'in efendisi. Bilgelik ve savaş tanrısı. Eşi: Frigg.</em></strong></li>
+  <li><strong><em>Rynkar- Zaman tanrısı</em></strong></li>
+  <li><strong><em>Saga - Tam olarak bilinmeyen bir tanrıça, Frigg'in başka bir ismi olduğu tahmin edilimekte.</em></strong></li>
+  <li><strong><em>Sif - Thor'un karısı.</em></strong></li>
+  <li><strong><em>Sjofn - Aşk tanrıçası.</em></strong></li>
+  <li><strong><em>Skadi - Kış tanrıçası Njord'ün eski karısı.</em></strong></li>
+  <li><strong><em>Skirnir- Frey'in habercisi ve hizmetçisi.</em></strong></li>
+  <li><strong><em>Skuld - (varlık, ya da gelecek) Üç norn tanrıçadan biri.</em></strong></li>
+  <li><strong><em>Snotra - İhtiyat tanrıçası.</em></strong></li>
+  <li><strong><em>Sol - Güneş tanrıçası.</em></strong></li>
+  <li><strong><em>Thor - Gökgürültüsü,fırtınalar ve savaş tanrısı. Eşi: Sif.</em></strong></li>
+  <li><strong><em>Tyr - Savaş ve savaşçı tanrısı.</em></strong></li>
+  <li><strong><em>Ull - Beceri, av ve duello tanrısı. Sif'in oğlu.</em></strong></li>
+  <li><strong><em>Urd - (Yazgı) Üç norn tanrıçadan biri.</em></strong></li>
+  <li><strong><em>Vali - İntikam tanrısı. Odin'in oğlu</em></strong></li>
+  <li><strong><em>Var - Sözleşme tanrıçası.</em></strong></li>
+  <li><strong><em>Ve - Üç yaratılış tanrısından biri. Odin ve Vili'nin kardeşi.</em></strong></li>
+  <li><strong><em>Verdandi - (ihtiyaç, ya da hediye) Üç norn tanrıçadan biri.</em></strong></li>
+  <li><strong><em>Vidar- Dev Grid ve Odin'in oğlu.</em></strong></li>
+  <li><strong><em>Vili - Üç yaratılış tanrısından biri. Odin ve Ve'nin kardeşi.</em></strong></li>
+  <li><strong><em>Vor - Bilgelik tanrıçası.</em></strong><em></em>
+<h1 id="firstHeading">&nbsp;</h1>
+  </li>
+</ul>
+<strong>
+      <p>&nbsp;</p>
+    </strong></div>
+  </div>
+
+
+<div class="sollink">
+  <div class="baslik">
+    <h2><marquee behavior="slide">Bölgelere Göre Mitolojiler</marquee></h2>
+  </div>
+
+<div class="sidebarmenu">
+<ul id="sidebarmenu1">
+
+<li><a href="#">Asya Mitolojisi
+ </a>
+  <ul>
+    <li><a href="cerkes.html">Çerkes Mitolojisi</a></li>
+    <li><a href="cin.html">Çin Mitolojisi</a></li>
+    <li><a href="hint.html">Hint Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="turk.html">Türk Mitolojisi</a></li>
+</ul>
+</li>
+
+<li><a href="#">Avustralya ve Okyanusya Mitolojisi</a>
+<ul>
+  <li><a href="avustralya.html">Avustralya Aborjin Mitolojisi</a></li>
+  </ul>
+</li>
+
+<li><a href="#">Avrupa Mitolojisi</a>
+  <ul>
+  <li><a href="kelt.html">Kelt Mitolojisi</a></li>
+  <li><a href="etrusk.html">Etrüsk Mitolojisi</a></li>
+  <li><a href="irlanda.html">İrlanda Mitolojisi</a></li>
+  <li><a href="nors.html">Nors Mitolojiisi</a></li>
+  <li><a href="roma.html">Roma Mitolojisi</a></li>
+  <li><a href="romanya.html">Romanya Mitolojisi</a></li>
+  <li><a href="slav.html">Slav Mitolojisi</a></li>
+  <li><a href="yunan.html">Yunan Mitolojisi</a></li>
+  
+  </ul>
+</li>
+
+<li><a href="#">Orta Doğu Mitolojisi</a>
+    <ul>
+    <li><a href="arap.html">Arap Mitolojisi</a></li>
+    <li><a href="pers.html">Pers Mitolojisi</a></li>
+    <li><a href="mezopotamya.html">Mezopotamya Mitolojisi</a></li>
+    
+    </ul>
+</li>
+
+<li><a href="#">Kuzey Amerika Yerlileri Mitolojisi</a>
+  <ul>
+  <li><a href="zuni.html">Zuni Mitolojisi</a></li> 
+  </ul>
+  </li>
+
+
+<li><a href="#">Güney Amerika ve Mezoamerika Yerlileri Mitolojisi</a>
+<ul>
+  <li><a href="aztek.html">Aztek Mitolojisi</a></li> 
+  <li><a href="inka.html">İnka Mitolojisi</a></li>
+  </ul>
+</li>
+
+</ul>
+</div>
+</div>
+<div class="imagepluscontainer" style="width:263px; height:199px; z-index:2"><img src="images/288px-Idun_and_the_Apples.jpg" width="250" height="208" />
+  <div class="desc">İskandinav tanrıları ölümlüydü, ve ancak Idunn'un elmaları ile Ragnarok'a kadar yaşayabilirlerdi. Resim: J. Penrose, 1890.</div>
+</div>
+
+</div>
+</div>
+</body>
